@@ -1,0 +1,25 @@
+import { Navbar } from "flowbite-react";
+import Link from "next/link";
+import Image from "next/image";
+const Navmenu = () => {
+    return(
+        <>
+        <nav className="hidden md:block md:p-0 fixed h-[100px] w-full bg-gradient-to-b from-black via-black-10 to-opacity-10 border-gray-200 z-[100] shadow-sm">
+            <div className="flex justify-center items-center h-full">
+                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="#" active>Concept</Link>
+                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" as={Link} href="#">Features</Link>
+                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="#">Facilities</Link>
+                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="#">Floor Plans</Link>
+                <Link className="mr-7" as={Link} href="https://flowbite-react.com">
+                    <Image src="img/levia-logo-2.svg" className="object-contain max-h-[120px] max-w-[180px] mx-5" alt="Facebook" width="200" height="200"/>
+                </Link>
+                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="#">Gallery</Link>
+                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="#">Location</Link>
+                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="#">Register</Link>
+                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px]" href="#">Contact</Link>
+            </div>
+        </nav>
+        </>
+    )
+}
+export default Navmenu;
