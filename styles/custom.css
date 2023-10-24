@@ -1,0 +1,6 @@
+section{padding: 100px 0;}
+.flip {transform: rotateY(180deg);transition: transform 0.5s;}
+.back{transform: rotateY(180deg);}
+.features-card .hidden {display: none;}
+.features-card .block {display: block;}
+.back:hover, .front:hover{cursor: pointer;}
