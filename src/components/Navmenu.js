@@ -108,7 +108,7 @@ const Navmenu = () => {
 
             </div>
         </nav>
-        </>
+        </div>
     )
 }
 export default Navmenu;
