@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }) {
     <>
         <Navmenu></Navmenu>
         <Component {...pageProps} />
+        <section className="bg-black h-[50px] py-0"></section>
     </>
   )
 }
