@@ -32,11 +32,11 @@ const Navmenu = () => {
                 <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="/">Concept</Link>
                 <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="/features">Features</Link>
                 <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="/facilities">Facilities</Link>
-                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="">Floor Plans</Link>
+                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="/floorplan">Floor Plans</Link>
                 <Link className="mr-7" href="https://flowbite-react.com">
                     <Image src="img/levia-logo-2.svg" className="object-contain max-h-[120px] max-w-[180px] mx-5" alt="Facebook" width="200" height="200"/>
                 </Link>
-                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="/">Gallery</Link>
+                <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="/gallery">Gallery</Link>
                 <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="/location">Location</Link>
                 <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px] mr-7" href="/register">Register</Link>
                 <Link className="font-GothamBook uppercase tracking-wider text-[20px] md:text-[14px] 3xl:text-[16px]" href="/contact">Contact</Link>
