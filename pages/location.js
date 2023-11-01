@@ -183,7 +183,7 @@ export default function location() {
         />
         <Image src="/img/star-line-full.svg" className="w-[40%] absolute left-0 right-0 mx-auto bottom-[29%]" alt="Facebook" width="1920" height="1000"/>
         <div className="text-center pt-8 xl:w-[60%] mx-auto">
-          <h3 className="font-GothamBook uppercase tracking-[5px] text-white text-[30px] md:text-[40px] 3xl:text-[50px] mb-5">Convenient <span className="font-ButlerBold text-[#7ea5a2] text-[32px] md:text-[42px] 3xl:text-[52px]">Leisure</span><br></br> <span className="font-ButlerBold text-[#bda37f] text-[32px] md:text-[42px] 3xl:text-[52px]">Via</span> Connections</h3>
+          <h3 className="font-GothamBook uppercase tracking-[5px] text-white text-[30px] md:text-[35px] 3xl:text-[50px] mb-5">Convenient <span className="font-ButlerBold text-[#7ea5a2] text-[32px] md:text-[42px] 3xl:text-[52px]">Leisure</span><br></br> <span className="font-ButlerBold text-[#bda37f] text-[32px] md:text-[42px] 3xl:text-[52px]">Via</span> Connections</h3>
           <p className="font-GothamBook text-white leading-loose text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[18px] 3xl:text-[20px]">LEVIA is strategically placed within a mature neighbourhood in Cheras, mere minutes away from Kuala Lumpur City Centre, for residents to enjoy easy access to a wide variety of lifestyle and public amenities.</p>
         </div>
       </section>
@@ -198,7 +198,7 @@ export default function location() {
             <div className="relative w-full md:w-[48%] xl:w-[48%]">
               <div className="w-[70%] mx-auto">
                 <h5 className="font-GothamBook uppercase text-[#858b8c] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[20px] 3xl:text-[25px]">The</h5>
-                <h3 className="font-ButlerBold uppercase leading-none text-[#bda37f] text-[30px] md:text-[40px] 3xl:text-[50px]">Geography</h3>
+                <h3 className="font-ButlerBold uppercase leading-none text-[#bda37f] text-[30px] md:text-[35px] 3xl:text-[50px]">Geography</h3>
                 <div className="pt-10 w-[90%] ml-auto">
                   <LocationAccordion 
                     id={leisureData.id}

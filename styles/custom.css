@@ -4,3 +4,9 @@ section{padding: 100px 0;}
 .features-card .hidden {display: none;}
 .features-card .block {display: block;}
 .back:hover, .front:hover{cursor: pointer;}
+@media (max-width: 960px){
+    .slick-slide img.hidden{display: none !important;}
+}
+@media (max-width: 500px){
+    section{padding: 50px 0;}
+}

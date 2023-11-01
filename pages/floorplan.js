@@ -11,47 +11,48 @@ export default function Floorplan() {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
 
-                <section></section>
+                <section className="pt-0"></section>
 
-                <section className="pt-0">
-                    <div className="container w-[85%] mx-auto">
-                        <div className="w-[70%] mx-auto">
+                <section>
+                    <div className="container w-[90%] sm:w-[85%] mx-auto">
+                        <div className="lg:w-full xl:w-[80%] mx-auto">
                             <Image src="/img/floorplan/tower.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
                         </div>
-                        <div className="text-center xl:w-[50%] mx-auto">
-                            <p className="font-GothamBook text-white leading-loose text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[18px] 3xl:text-[20px] my-10">
+                        <div className="text-center lg:w-[80%] xl:w-[50%] mx-auto">
+                            <p className="font-GothamBook text-white mt-10 mb-0 sm:mb-10 leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">
                                 LEVIA’s residences offer versatile living arrangements that cater to a range of lifestyles.
                                 For multi-generational families seeking privacy or residents looking to generate rental income,
                                 our homes feature a convenient dual-key ready system.
                             </p>
-                            <Image src="/img/star-line-full.svg" className="w-full mx-auto" alt="Facebook" width="1000" height="500"/>
+                            <Image src="/img/star-line-full.svg" className="w-full mx-auto hidden sm:block" alt="Facebook" width="1000" height="500"/>
                         </div>
                         
                     </div>
                 </section>
 
                 <section className="py-0">
-                    <Image src="/img/floorplan/breaker.png" className="w-full" alt="Facebook" width="1920" height="1000"/>
+                    <Image src="/img/floorplan/breaker.png" className="w-full h-[500px] sm:h-[700px] object-cover" alt="Facebook" width="1920" height="1000"/>
                 </section>
 
                 <section className="bg-[url('/img/white-bg.png')] bg-cover bg-center">
-                    <div className="container w-[85%] mx-auto">
-                        <div className="relative text-center w-[40%] mx-auto">
-                        <Image src="/img/line-star.svg" className="rotate-180 w-[30%] left-[-6%] absolute top-[-20%]" alt="Facebook" width="500" height="300"/>
-                        <h3 className="font-Baskerville tracking-[3px] uppercase leading-none text-[#bda37f] text-[30px] md:text-[40px] 3xl:text-[40px]">Floor Plans</h3>
+                    <div className="container w-[90%] sm:w-[85%] mx-auto">
+                        <div className="relative text-center w-[80%] lg:w-[40%] mx-auto">
+                        <Image src="/img/line-star.svg" className="hidden sm:block rotate-180 w-[30%] left-[-10%] absolute top-[-20%]" alt="Facebook" width="500" height="300"/>
+                        <Image src="/img/line-star.svg" className="hidden sm:block w-[30%] right-[-10%] absolute top-[-20%]" alt="Facebook" width="500" height="300"/>
+                        <h3 className="font-Baskerville tracking-[3px] uppercase leading-none text-[#bda37f] sm:tracking-[5px]  text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]">Floor Plans</h3>
                         </div>
                         <Tab/>
                     </div>
                 </section>
 
                 <section>
-                    <div className="container w-[85%] mx-auto">
-                        <div className="relative text-center w-[40%] mx-auto">
-                            <Image src="/img/line-star.svg" className="rotate-180 w-[30%] left-[-10%] absolute top-[-20%]" alt="Facebook" width="500" height="300"/>
-                            <Image src="/img/line-star.svg" className="w-[30%] right-[-10%] absolute top-[-20%]" alt="Facebook" width="500" height="300"/>
-                            <h3 className="font-Baskerville tracking-[3px] uppercase leading-none text-[#bda37f] text-[30px] md:text-[40px] 3xl:text-[40px]">Specifications</h3>
+                    <div className="container w-[90%] sm:w-[85%] mx-auto">
+                        <div className="relative text-center w-[45%] mx-auto">
+                            <Image src="/img/line-star.svg" className="hidden sm:block rotate-180 w-[30%] left-[-10%] absolute top-[-20%]" alt="Facebook" width="500" height="300"/>
+                            <Image src="/img/line-star.svg" className="hidden sm:block w-[30%] right-[-10%] absolute top-[-20%]" alt="Facebook" width="500" height="300"/>
+                            <h3 className="font-Baskerville tracking-[3px] uppercase leading-none text-[#bda37f] text-[30px] md:text-[35px] 3xl:text-[40px]">Specifications</h3>
                         </div>
-                        <div className="w-[80%] mx-auto mt-14">
+                        <div className="w-full lg:w-[90%] mx-auto mt-14">
                             <Image src="/img/floorplan/specifications.png" className="w-full" alt="Facebook" width="1920" height="1000"/>
                         </div>
                     </div>

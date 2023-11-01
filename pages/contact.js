@@ -19,7 +19,7 @@ export default function contact() {
                       <Image src="/img/line-star.svg" className="w-[30%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
                       <h3 className="font-Avgardn tracking-[10px] uppercase leading-none text-[#bda37f] text-[30px] md:text-[40px] 3xl:text-[40px]">Contact Us</h3>
                     </div>
-                    <div className="w-[80%] mx-auto flex items-center pt-8 mt-8">
+                    <div className="w-[80%] mx-auto flex items-center mt-14">
                         <Image src="/img/awards/matrix-logo.svg" className="w-fit max-h-[120px] mr-8" alt="Facebook" width="300" height="300"/>
                         <div>
                             <p class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[18px] 3xl:text-[20px]">Head Office<br></br>Wisma Matrix, No.57, Jalan Tun Dr. Ismail,<br></br>70200 Seremban, Negeri Sembilan D.K. Malaysia</p>
@@ -29,7 +29,7 @@ export default function contact() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[80%] mx-auto pt-8 mt-8">
+                    <div className="w-[80%] mx-auto mt-14">
                         <div className="flex items-center justify-center">
                             <div className="flex items-center flex-1 border-solid border border-[#bda37f] border-b-0 border-t-0 border-l-0">
                                 <Image src="/img/levia-logo.svg" className="w-fit max-h-[120px] mr-8" alt="Facebook" width="300" height="300"/>

@@ -10,14 +10,15 @@ export default function register() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <section className="pt-0 bg-[url('/img/white-bg.png')] bg-cover bg-center"></section>
             <section className="bg-[url('/img/white-bg.png')] bg-cover bg-center">
                 <div className="w-full md:gap-0 flex flex-wrap justify-between items-center">
                     <div className="relative w-full md:w-[48%] xl:w-[40%] fac-image">
                         <Image src="/img/contact/contact-img.png" className="w-full" alt="Facility" width={1000} height={1000}/>
                     </div>
-                    <div className="relative w-full md:w-[48%] xl:w-[55%] py-10">
+                    <div className="relative w-full md:w-[48%] xl:w-[55%]">
                         <div className="w-[80%]">
-                            <h3 className="font-Avgard tracking-[10px] uppercase leading-none text-[#bda37f] text-[30px] md:text-[40px] 3xl:text-[40px] pb-8">Registration</h3>
+                            <h3 className="font-Avgard tracking-[10px] uppercase leading-none text-[#bda37f] text-[30px] md:text-[40px] 3xl:text-[40px]">Registration</h3>
                             <RegForm/>
                         </div>
                     </div>

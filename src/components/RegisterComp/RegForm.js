@@ -59,7 +59,7 @@ const RegForm = () => {
         ]
     }
     return(
-        <div className="w-full">
+        <div className="w-full mt-14">
             <form>
                 <div className="grid grid-cols-2 gap-3 py-5">
                     <div className="flex items-center">
