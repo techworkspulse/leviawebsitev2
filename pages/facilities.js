@@ -38,14 +38,14 @@ export default function Facilities() {
       </section>
 
       <section className="relative bg-[url('/img/white-bg.png')] bg-cover bg-no-repeat">
-        <div className="container w-[85%] mx-auto">
-            <div className="w-[40%]">
-                <h3 className="font-GothamBook uppercase tracking-[5px] text-[#858b8c] text-[30px] md:text-[40px] 3xl:text-[50px] mb-5">Everyday Rejuvenating <span className="font-ButlerBold text-[#7ea5a2] text-[32px] md:text-[42px] 3xl:text-[52px]">Leisure</span><br></br> <span className="font-ButlerBold text-[#bda37f] text-[32px] md:text-[42px] 3xl:text-[52px]">Via</span> Evergreen Opportunities</h3>
-                <p className="font-GothamBook text-[#858b8c] leading-loose mb-10 text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[18px] 3xl:text-[20px]">LEVIA’s facilities are divided across three zones with distinctive
+        <div className="container w-[90%] sm:w-[85%] mx-auto">
+            <div className="w-full lg:w-[40%] text-center lg:text-left">
+                <h3 className="font-GothamBook uppercase text-[#858b8c] tracking-[3px] sm:tracking-[5px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px]">Everyday Rejuvenating <span className="font-ButlerBold text-[#7ea5a2] text-[27px] sm:text-[32px] 2xl:text-[37px] 3xl:text-[52px]">Leisure</span><br></br> <span className="font-ButlerBold text-[#bda37f] text-[27px] sm:text-[32px] 2xl:text-[37px] 3xl:text-[52px]">Via</span> Evergreen Opportunities</h3>
+                <p className="font-GothamBook text-[#858b8c] my-10 leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">LEVIA’s facilities are divided across three zones with distinctive
                     environments that allow one to fully enjoy their lavish offerings.
                 </p>
-                <a onClick={() => props.setOpenModal('default')} className="border-solid border-2 border-[#bda37f] flex w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white">
-                    <div className="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[20px] 3xl:text-[23px]">
+                <a onClick={() => props.setOpenModal('default')} className="border-solid border-2 border-[#bda37f] flex justify-center mx-auto lg:mx-0 w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white">
+                    <div className="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px]">
                         Facilities Plan
                     </div>
                 </a>
@@ -57,35 +57,35 @@ export default function Facilities() {
         <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto bottom-[-0%] z-[2]" alt="Facebook" width="500" height="500"/>
         <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto bottom-[-0%] z-[2]" alt="Facebook" width="500" height="500"/>
         <div className="w-full md:gap-0 flex flex-wrap justify-between items-center">
-            <div className="relative w-full md:w-[48%] xl:w-[60%] fac-image">
+            <div className="hidden lg:block relative w-full md:w-[60%] xl:w-[60%] fac-image">
               <Image src="/img/facilities/facilities-img.png" className="w-full rounded-tr-[58px]" alt="Facility" width={1000} height={1000}/>
             </div>
-            <div className="relative w-full md:w-[48%] xl:w-[40%]">
+            <div className="hidden lg:block relative w-full md:w-[40%] xl:w-[40%]">
                 <div className="text-center">
                   
-                    <div className="relative pb-5 w-[80%] mx-auto">
+                    <div className="relative pb-5 w-full xl:w-[80%] mx-auto">
                       <Image src="/img/line-long-right.svg" className="rotate-180 w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
                       <Image src="/img/line-long-right.svg" className="w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
-                      <h5 className="font-GothamBook uppercase tracking-[3px] text-[#bda37f] w-fit mx-auto text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[20px] 3xl:text-[25px]">Facilities</h5>
+                      <h5 className="font-GothamBook uppercase tracking-[3px] text-[#bda37f] w-fit mx-auto text-[19px] md:text-[20px] xl:text-[20px] 2xl:text-[22px] 3xl:text-[25px]">Facilities</h5>
                     </div>
 
                     <a onClick={() => handleSlideChange(0)} className="relative text-[#858b8c] block py-5 leading-none hover:text-[#7ea5a2] hover:cursor-pointer">
                       <Image src="/img/line.svg" className="w-[30%] left-0 right-0 mx-auto absolute bottom-0" alt="Facebook" width="300" height="300"/>
-                      <div className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-[17px] md:text-[18px] lg:text-[20px] 2xl:text-[20px] 3xl:text-[25px]">
+                      <div className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-[19px] md:text-[20px] xl:text-[20px] 2xl:text-[22px] 3xl:text-[25px]">
                           The Aqua Zone
                       </div>
                     </a>
 
                     <a onClick={() => handleSlideChange(1)} className="relative text-[#858b8c] block py-5 leading-none hover:text-[#7ea5a2] hover:cursor-pointer">
                       <Image src="/img/line.svg" className="w-[30%] left-0 right-0 mx-auto absolute bottom-0" alt="Facebook" width="300" height="300"/>
-                      <div className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-[17px] md:text-[18px] lg:text-[20px] 2xl:text-[20px] 3xl:text-[25px]">
+                      <div className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-[19px] md:text-[20px] xl:text-[20px] 2xl:text-[22px] 3xl:text-[25px]">
                           The Eco Zone
                       </div>
                     </a>
 
                     <a onClick={() => handleSlideChange(2)} className="relative text-[#858b8c] block py-5 leading-none hover:text-[#7ea5a2] hover:cursor-pointer">
                       <Image src="/img/line.svg" className="w-[30%] left-0 right-0 mx-auto absolute bottom-0" alt="Facebook" width="300" height="300"/>
-                      <div className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-[17px] md:text-[18px] lg:text-[20px] 2xl:text-[20px] 3xl:text-[25px]">
+                      <div className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-[19px] md:text-[20px] xl:text-[20px] 2xl:text-[22px] 3xl:text-[25px]">
                           The Leisure Zone
                       </div>
                     </a>

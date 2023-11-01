@@ -24,11 +24,11 @@ const FeaturesCard = ({img, img2, icon, icon2, title, title2, subtitle, subtitle
                 >
                     <Image src={img} className="h-full w-fit object-cover" alt="Front" width="800" height="800" />
                     <div className="w-full h-[40%] absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent"></div>
-                    <div className="w-[80%] mx-auto flex flex-row items-start justify-start absolute bottom-[10%] left-0 right-0">
-                        <Image src={`${icon}`} className="h-[80px] w-fit max-w-[80px]" alt="Facebook" width="200" height="200" />
+                    <div className="w-[85%] 3xl:w-[80%] mx-auto flex flex-row items-start justify-start absolute bottom-[10%] left-0 right-0">
+                        <Image src={`${icon}`} className="h-[80px] w-fit max-w-[50px] 2xl:max-w-[55px] 3xl:max-w-[80px]" alt="Facebook" width="200" height="200" />
                         <div className="ml-3 mt-3">
-                            <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[18px] 3xl:text-[23px] uppercase">{title}</h5>
-                            <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[18px] 3xl:text-[20px]">{subtitle}</p>
+                            <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">{title}</h5>
+                            <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">{subtitle}</p>
                         </div>
                     </div>
                 </div>
@@ -41,11 +41,11 @@ const FeaturesCard = ({img, img2, icon, icon2, title, title2, subtitle, subtitle
                 >
                     <Image src={img2} className="h-full w-fit object-cover" alt="Back" width="800" height="800" />
                     <div className="w-full h-[40%] absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent"></div>
-                    <div className="w-[80%] mx-auto flex flex-row items-start justify-start absolute bottom-[10%] left-0 right-0">
-                        <Image src={`${icon2}`} className="h-[80px] w-fit max-w-[80px]" alt="Facebook" width="200" height="200" />
+                    <div className="w-[85%] 3xl:w-[80%] mx-auto flex flex-row items-start justify-start absolute bottom-[10%] left-0 right-0">
+                        <Image src={`${icon2}`} className="h-[80px] w-fit max-w-[50px] 2xl:max-w-[55px] 3xl:max-w-[80px]" alt="Facebook" width="200" height="200" />
                         <div className="ml-3 mt-3">
-                            <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[18px] 3xl:text-[23px] uppercase">{title2}</h5>
-                            <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[18px] 3xl:text-[20px]">{subtitle2}</p>
+                            <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">{title2}</h5>
+                            <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[18px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">{subtitle2}</p>
                         </div>
                     </div>
                 </div>
