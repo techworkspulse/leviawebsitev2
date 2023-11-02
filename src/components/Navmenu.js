@@ -39,7 +39,7 @@ const Navmenu = () => {
                 <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/features">Features</Link>
                 <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/facilities">Facilities</Link>
                 <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/floorplan">Floor Plans</Link>
-                <Link className="mr-6 xl:mr-6 2xl:mr-7" href="https://flowbite-react.com">
+                <Link className="mr-6 xl:mr-6 2xl:mr-7" href="/">
                     <Image src="img/levia-logo-2.svg" className="object-contain max-h-[60px] xl:max-h-[70px] 3xl:max-h-[80px] w-full" alt="Facebook" width="200" height="200"/>
                 </Link>
                 <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/gallery">Gallery</Link>
@@ -48,7 +48,7 @@ const Navmenu = () => {
                 <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px]" href="/contact">Contact</Link>
             </div>
             <div className="relative flex lg:hidden justify-between items-center h-full">
-              <Link className="pl-[5%]" href="https://flowbite-react.com">
+              <Link className="pl-[5%]" href="/">
                     <Image src="img/levia-logo-2.svg" className="object-contain max-h-[40px] sm:max-h-[60px] xl:max-h-[70px] 3xl:max-h-[80px] w-full" alt="Facebook" width="200" height="200"/>
               </Link>
               <button className="pr-[5%] text-[#bda37f]" onClick={toggleAbsolute}>

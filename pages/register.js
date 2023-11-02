@@ -1,4 +1,5 @@
 import RegForm from "@/src/components/RegisterComp/RegForm";
+import StickyButton from "@/src/components/StickyButton";
 import Head from "next/head";
 import Image from "next/image";
 export default function register() {
@@ -32,6 +33,7 @@ export default function register() {
                     </div>
                 </div>
             </section>
+            <StickyButton></StickyButton>
         </>
     );
 }
