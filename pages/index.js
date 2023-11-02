@@ -5,6 +5,16 @@ import "slick-carousel/slick/slick-theme.css";
 import StickyButton from '@/src/components/StickyButton';
 
 export default function Home() {
+
+  useEffect( () => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+
+  }, [])
   return (
     <>
       <Head>
