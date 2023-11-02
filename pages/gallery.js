@@ -14,7 +14,7 @@ export default function Gallery() {
             <section className="pt-0"></section>
 
             <section>
-                <div className="container w-[85%] mx-auto">
+                <div className="container w-[90%] sm:w-[85%] mx-auto">
                     <GalleryTab/>
                 </div>
             </section>

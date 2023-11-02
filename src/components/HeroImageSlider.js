@@ -8,6 +8,7 @@ const HeroImageSlider = ({img1, img2, img3}) => {
       dots: false,
       infinite: true,
       autoplay:true,
+      adaptiveHeight:true,
       speed: 500,
       margin:0,
       slidesToShow: 1,
