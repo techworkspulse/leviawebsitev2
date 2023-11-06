@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import HeroImageSlider from '@/src/components/HeroImageSlider';
 import LocationAccordion from '@/src/components/LocationComp/LocationAccordion';
 
-export default function location() {
+export default function Location() {
   const leisureData = {
     "id": "leisure",
     "title": "Leisure & Recreations",
@@ -162,7 +162,7 @@ export default function location() {
     ]
   };
 
-  const [activeAccordion, setActiveAccordion] = useState('mall');
+  const [activeAccordion, setActiveAccordion] = useState('mall'); 
 
   return (
     <>

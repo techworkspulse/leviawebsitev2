@@ -3,8 +3,21 @@ import Image from 'next/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import StickyButton from '@/src/components/StickyButton';
+import { useEffect, useRef } from 'react';
+import { motion } from "framer-motion";
+import gsap from "gsap";
 
 export default function Home() {
+
+  useEffect( () => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+
+  }, [])
   return (
     <>
       <Head>
@@ -15,14 +28,26 @@ export default function Home() {
       </Head>
 
       <section className="block sm:hidden"></section>
-      <section className="hidden sm:flex h-screen items-center py-0">
-        <Image src="/img/home/star.png" className="w-[50%] mx-auto" alt="Facebook" width="1920" height="1000"/>
+      <section className="hidden sm:flex h-screen items-center py-0 mx-auto justify-center">
+        <motion.div
+          initial={{ scale: 0 }} 
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.5, }}
+        >
+          <Image
+            src="/img/home/star.png"
+            className="w-[50%] mx-auto"
+            alt="Star"
+            width={1920}
+            height={1000}
+          />
+        </motion.div>
       </section>
 
       <section className="h-fit sm:h-screen flex items-center sm:py-0">
         <div className="w-[90%] sm:w-[85%] xl:w-[50%] mx-auto relative">
           <Image src="/img/home/star.png" className="w-[30%] absolute top-[-60%] right-[10%]" alt="Facebook" width="1000" height="1000"/>
-          <h1 className="font-GothamBook uppercase text-center tracking-[3px] sm:tracking-[5px] text-[#bda37f] text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]">An Inspired Oasis <br></br>at the City's Heart</h1>
+          <h1 className="font-GothamBook uppercase text-center tracking-[3px] sm:tracking-[5px] text-[#bda37f] text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]">An Inspired Oasis <br></br>at the Citys Heart</h1>
         </div>
       </section>
 
@@ -33,7 +58,7 @@ export default function Home() {
               <Image src="/img/levia-logo.svg" className="w-[50%] ml-0" alt="Facebook" width="800" height="1000"/>
             </div>
             <p className="font-GothamBook text-center sm:text-right text-white leading-normal mb-10 lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px]">
-              LEVIA comes from a combination<br></br> of the words "Leisure" and "Via", the latter meaning "by way of".</p>
+              LEVIA comes from a combination<br></br> of the words Leisure and Via, the latter meaning by way of.</p>
             <p className="font-GothamBook text-center sm:text-right text-white leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px]">
               This name emphasises the highly accessible nature of the development, especially with<br></br>
                 surrounding lifestyle amenities and opportunities, inviting people to
