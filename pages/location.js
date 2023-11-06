@@ -162,7 +162,7 @@ export default function location() {
     ]
   };
 
-  const [activeAccordion, setActiveAccordion] = useState('mall');
+  // const [activeAccordion, setActiveAccordion] = useState('mall'); need to come back to fix
 
   return (
     <>
