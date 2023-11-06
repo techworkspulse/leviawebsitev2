@@ -35,17 +35,17 @@ const Navmenu = () => {
         <>
         <nav className={navbarClass}>
             <div className="hidden lg:flex justify-center items-center h-full w-[85%] mx-auto">
-                <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/">Concept</Link>
-                <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/features">Features</Link>
-                <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/facilities">Facilities</Link>
-                <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/floorplan">Floor Plans</Link>
+                <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/">Concept</Link>
+                <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/features">Features</Link>
+                <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/facilities">Facilities</Link>
+                <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/floorplan">Floor Plans</Link>
                 <Link className="mr-6 xl:mr-6 2xl:mr-7" href="/">
                     <Image src="img/levia-logo-2.svg" className="object-contain max-h-[60px] xl:max-h-[70px] 3xl:max-h-[80px] w-full" alt="Facebook" width="200" height="200"/>
                 </Link>
-                <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/gallery">Gallery</Link>
-                <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/location">Location</Link>
-                <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/register">Register</Link>
-                <Link className="font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px]" href="/contact">Contact</Link>
+                <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/gallery">Gallery</Link>
+                <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/location">Location</Link>
+                <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/register">Register</Link>
+                <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px]" href="/contact">Contact</Link>
             </div>
             <div className="relative flex lg:hidden justify-between items-center h-full">
               <Link className="pl-[5%]" href="/">
