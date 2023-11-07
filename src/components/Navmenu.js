@@ -97,15 +97,15 @@ const Navmenu = () => {
                       : 'translate-x-full'
                   }`}
                 >
-                <div className="flex flex-col justify-around items-center h-full px-[50px]">
-                  <Link className="font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right" href="/">Concept</Link>
-                  <Link className="font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right" href="/features">Features</Link>
-                  <Link className="font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right" href="/facilities">Facilities</Link>
-                  <Link className="font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right" href="/floorplan">Floor Plans</Link>
-                  <Link className="font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right" href="/gallery">Gallery</Link>
-                  <Link className="font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right" href="/location">Location</Link>
-                  <Link className="font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right" href="/register">Register</Link>
-                  <Link className="font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right" href="/contact">Contact</Link>
+                <div className="flex flex-col justify-center items-center h-full px-[50px]">
+                  <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/">Concept</Link>
+                  <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/features">Features</Link>
+                  <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/facilities">Facilities</Link>
+                  <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/floorplan">Floor Plans</Link>
+                  <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/gallery">Gallery</Link>
+                  <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/location">Location</Link>
+                  <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/register">Register</Link>
+                  <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/contact">Contact</Link>
                 </div>
               </div>
               )}

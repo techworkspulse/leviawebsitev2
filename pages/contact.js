@@ -20,7 +20,7 @@ export default function contact() {
         <Navmenu />
       </motion.div>
 
-            <section>
+            <section className="pt-[200px]">
                 <div className="container w-[90%] sm:w-[85%] mx-auto">
                     <div className="relative text-center w-[80%] lg:w-[40%] mx-auto">
                         <Image src="/img/line-star.svg" className="hidden sm:block rotate-180 w-[30%] left-[-10%] absolute top-[-20%]" alt="Facebook" width="500" height="300"/>
