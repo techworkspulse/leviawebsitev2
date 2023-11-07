@@ -61,4 +61,10 @@ section{padding: 100px 0;}
         z-index: 20;
     }
     .gallery-slider .slick-slide {padding: 0 10px;}
+    .heroslider .slick-prev, .heroslider .slick-next{
+        top: 50%;
+    }
+    .heroimageslider .slick-prev, .heroimageslider .slick-next{
+        top: 80%;
+    }
 }
