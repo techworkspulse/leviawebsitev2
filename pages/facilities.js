@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HeroImageSlider from '@/src/components/HeroImageSlider';
@@ -9,12 +9,14 @@ import { Modal} from 'flowbite-react';
 import FacSlider from '@/src/components/FacilitiesComp/FacSlider';
 import Navmenu from '../src/components/Navmenu';
 import { useScroll, useTransform, useAnimation, motion, Variants } from "framer-motion";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Facilities() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const swiperRef = useRef(null)
 
-  const handleSlideChange = (newSlide) => {
-    setActiveSlide(newSlide);
+  const handleSlideChange = (slideIndex) => {
+    swiperRef.current.swiper.slideTo(slideIndex);
   };
 
   const [openModal, setOpenModal] = useState();
@@ -105,19 +107,57 @@ export default function Facilities() {
       </section>
 
       <section className="relative py-0">
-        <FacSlider
-            activeSlide={activeSlide}
-            onSlideChange={handleSlideChange}
-            img1={"/img/facilities/fac1.png"}
-            title1={"The Aqua Zone"}
-            subtitle1={"Dip your toes on a sunny day or submerge yourself in the jacuzzi as your stress floats away with the bubbling waters."}
-            img2={"/img/facilities/fac2.png"}
-            title2={"The Eco Zone"}
-            subtitle2={"Cook up some burgers and steaks at the Grill Deck or make your way to the Open Green Lawn to bond with your loved ones as you savor warm meals and splendid views."}
-            img3={"/img/facilities/fac3.png"}
-            title3={"The Leisure Zone"}
-            subtitle3={"Explore nature in the Forest Garden with garden swings and hammocks that envelop you in delight for a peaceful and tranquil everyday experience."}
-          />
+          <swiper-container 
+            ref={swiperRef} 
+            onSwiper={(s) => (swiper = s)} 
+            slides-per-view="1" 
+            speed="500" 
+            spaceBetween="0" 
+            loop="false" 
+            css-mode="true" 
+            keyboard="true" 
+            navigation="false"
+          >
+              <swiper-slide id="slide-1">
+                <div className="flex flex-col items-center justify-center">
+                  <Image src="/img/facilities/fac1.png" width="1920" height="700" className="w-full h-[500px] lg:h-[700px]  object-cover" alt="Image 1" />
+                  <div className="text-center py-8 w-[85%] xl:w-[60%] mx-auto">
+                    <div className="relative w-full lg:w-[60%] mx-auto">
+                        <Image src="/img/line-long-right.svg" className="rotate-180 w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
+                        <Image src="/img/line-long-right.svg" className="w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
+                        <h3 className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-white mb-5 text-[19px] md:text-[20px] xl:text-[20px] 2xl:text-[22px] 3xl:text-[25px]">The Aqua Zone</h3>
+                    </div>
+                    <p className="font-GothamBook text-white leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Dip your toes on a sunny day or submerge yourself in the jacuzzi as your stress floats away with the bubbling waters.</p>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide id="slide-2">
+                <div className="flex flex-col items-center justify-center">
+                  <Image src="/img/facilities/fac2.png" width="1920" height="700" className="w-full h-[500px] lg:h-[700px]  object-cover" alt="Image 1" />
+                  <div className="text-center py-8 w-[85%] xl:w-[60%] mx-auto">
+                    <div className="relative w-full lg:w-[60%] mx-auto">
+                        <Image src="/img/line-long-right.svg" className="rotate-180 w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
+                        <Image src="/img/line-long-right.svg" className="w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
+                        <h3 className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-white mb-5 text-[19px] md:text-[20px] xl:text-[20px] 2xl:text-[22px] 3xl:text-[25px]">The Eco Zone</h3>
+                    </div>
+                    <p className="font-GothamBook text-white leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Cook up some burgers and steaks at the Grill Deck or make your way to the Open Green Lawn to bond with your loved ones as you savor warm meals and splendid views.</p>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide id="slide-3">
+                <div className="flex flex-col items-center justify-center">
+                  <Image src="/img/facilities/fac3.png" width="1920" height="700" className="w-full h-[500px] lg:h-[700px]  object-cover" alt="Image 1" />
+                  <div className="text-center py-8 w-[85%] xl:w-[60%] mx-auto">
+                    <div className="relative w-full lg:w-[60%] mx-auto">
+                        <Image src="/img/line-long-right.svg" className="rotate-180 w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
+                        <Image src="/img/line-long-right.svg" className="w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
+                        <h3 className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-white mb-5 text-[19px] md:text-[20px] xl:text-[20px] 2xl:text-[22px] 3xl:text-[25px]">The Leisure Zone</h3>
+                    </div>
+                    <p className="font-GothamBook text-white leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Explore nature in the Forest Garden with garden swings and hammocks that envelop you in delight for a peaceful and tranquil everyday experience.</p>
+                  </div>
+                </div>
+              </swiper-slide>
+          </swiper-container>
       </section>
 
       <Modal dismissible show={props.openModal === 'default'} size="full-screen" onClose={() => props.setOpenModal(undefined)}>
