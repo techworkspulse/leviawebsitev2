@@ -122,9 +122,10 @@ export default function Home() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
+        id="concept"
       >
         <div className="w-[90%] sm:w-[85%] xl:w-[60%] mx-auto flex flex-col sm:flex-row items-center">
-          <div>
+          <div className="w-1/2">
             <motion.div
               variants={childVariants}
               className="flex justify-center sm:justify-end mb-8 sm:mb-14"
@@ -149,12 +150,12 @@ export default function Home() {
               </p>
             </motion.div>
           </div>
-          <div>
+          <div className="w-1/2">
             <motion.div variants={childVariants}>
               <Image
-                src="/img/home/building.png"
+                src="/img/rsz_levia_building_sketch_kurttry.png"
                 className="w-full mx-auto"
-                alt="Facebook"
+                alt="Building"
                 width={1920}
                 height={1000}
               />

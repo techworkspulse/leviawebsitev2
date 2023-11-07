@@ -116,12 +116,12 @@ export default function Facilities() {
             loop="false" 
             css-mode="true" 
             keyboard="true" 
-            navigation="false"
+            navigation="true"
           >
               <swiper-slide id="slide-1">
                 <div className="flex flex-col items-center justify-center">
                   <Image src="/img/facilities/fac1.png" width="1920" height="700" className="w-full h-[500px] lg:h-[700px]  object-cover" alt="Image 1" />
-                  <div className="text-center py-8 w-[85%] xl:w-[60%] mx-auto">
+                  <div className="text-center py-[100px] w-[85%] xl:w-[60%] mx-auto">
                     <div className="relative w-full lg:w-[60%] mx-auto">
                         <Image src="/img/line-long-right.svg" className="rotate-180 w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
                         <Image src="/img/line-long-right.svg" className="w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
@@ -134,7 +134,7 @@ export default function Facilities() {
               <swiper-slide id="slide-2">
                 <div className="flex flex-col items-center justify-center">
                   <Image src="/img/facilities/fac2.png" width="1920" height="700" className="w-full h-[500px] lg:h-[700px]  object-cover" alt="Image 1" />
-                  <div className="text-center py-8 w-[85%] xl:w-[60%] mx-auto">
+                  <div className="text-center py-[100px] w-[85%] xl:w-[60%] mx-auto">
                     <div className="relative w-full lg:w-[60%] mx-auto">
                         <Image src="/img/line-long-right.svg" className="rotate-180 w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
                         <Image src="/img/line-long-right.svg" className="w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
@@ -147,7 +147,7 @@ export default function Facilities() {
               <swiper-slide id="slide-3">
                 <div className="flex flex-col items-center justify-center">
                   <Image src="/img/facilities/fac3.png" width="1920" height="700" className="w-full h-[500px] lg:h-[700px]  object-cover" alt="Image 1" />
-                  <div className="text-center py-8 w-[85%] xl:w-[60%] mx-auto">
+                  <div className="text-center py-[100px] w-[85%] xl:w-[60%] mx-auto">
                     <div className="relative w-full lg:w-[60%] mx-auto">
                         <Image src="/img/line-long-right.svg" className="rotate-180 w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
                         <Image src="/img/line-long-right.svg" className="w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
@@ -160,10 +160,10 @@ export default function Facilities() {
           </swiper-container>
       </section>
 
-      <Modal dismissible show={props.openModal === 'default'} size="full-screen" onClose={() => props.setOpenModal(undefined)}>
-        <Modal.Header></Modal.Header>
-        <Modal.Body>
-          <Image src="/img/facilities/fac-plan-full.png" className="w-full" alt="Facebook" width="2000" height="2000"/>
+      <Modal dismissible className="full-modal" show={props.openModal === 'default'} size="full-screen" onClose={() => props.setOpenModal(undefined)} popup>
+        <Modal.Header className="border-0 p-0 absolute right-[15px] close"></Modal.Header>
+        <Modal.Body className="p-0 m-0 bg-[#06243F]">
+          <Image src="/img/facilities/fac-plan-zoom-levia-clean.png" className="h-[80vh] object-contain" alt="Facebook" width="2000" height="2000"/>
         </Modal.Body>
       </Modal>
     </>

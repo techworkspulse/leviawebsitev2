@@ -34,8 +34,8 @@ export default function Features() {
       <section className="relative pt-0 mt-0 lg:mt-14">
       <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto bottom-[14.5%] 3xl:bottom-[19.5%] z-[2]" alt="Facebook" width="500" height="500"/>
         <div className="container w-[90%] sm:w-[85%] mx-auto">
-          <div className="w-full lg:w-[80%] xl:w-[70%] md:gap-4 hidden lg:flex flex-wrap justify-center m-auto">
-            <div className="group h-[400px] w-[400px] [perspective:1000px]">
+          <div className="w-full lg:w-[80%] xl:w-[70%] md:gap-1 hidden lg:flex flex-wrap justify-center m-auto relative">
+            <div className="group h-[450px] w-[450px] [perspective:1000px]">
               <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Back  */}
                 <div className="absolute inset-0 [transform:rotateY(180deg)]">
@@ -46,6 +46,7 @@ export default function Features() {
                         <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Low-Density</h5>
                         <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">778 Units On 4.71-Acres Land</p>
                     </div>
+                    <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-57%] w-1/2" />
                   </div>
                 </div>
                 {/* Front  */}
@@ -57,11 +58,13 @@ export default function Features() {
                         <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Strategically</h5>
                         <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Located in south KL</p>
                     </div>
+                    <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-57%] w-1/2" />
                   </div>
                 </div>
+                
               </div>
             </div>
-            <div className="group h-[400px] w-[400px] [perspective:1000px]">
+            <div className="group h-[450px] w-[450px] [perspective:1000px]">
               <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Back  */}
                 <div className="absolute inset-0 [transform:rotateY(180deg)]">
@@ -72,6 +75,7 @@ export default function Features() {
                         <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Green-Re</h5>
                         <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Green-Re</p>
                     </div>
+                    <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-57%] w-1/2" />
                   </div>
                 </div>
                 {/* Front  */}
@@ -83,11 +87,12 @@ export default function Features() {
                         <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Comprehensive</h5>
                         <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Lifestyle Facilities</p>
                     </div>
+                    <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-57%] w-1/2" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="group h-[400px] w-[400px] [perspective:1000px]">
+            <div className="group h-[450px] w-[450px] [perspective:1000px]">
               <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Back  */}
                 <div className="absolute inset-0 [transform:rotateY(180deg)]">
@@ -98,6 +103,7 @@ export default function Features() {
                         <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Residential</h5>
                         <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Title</p>
                     </div>
+                    <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-57%] w-1/2" />
                   </div>
                 </div>
                 {/* Front  */}
@@ -109,11 +115,12 @@ export default function Features() {
                         <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Good Connectivity</h5>
                         <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">& Accessibility to Major Highways</p>
                     </div>
+                    <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-57%] w-1/2" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="group h-[400px] w-[400px] [perspective:1000px]">
+            <div className="group h-[450px] w-[450px] [perspective:1000px]">
               <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Back  */}
                 <div className="absolute inset-0 [transform:rotateY(180deg)]">
@@ -124,6 +131,7 @@ export default function Features() {
                         <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">North & South</h5>
                         <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Orientation</p>
                     </div>
+                    <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-57%] w-1/2" />
                   </div>
                 </div>
                 {/* Front  */}
@@ -135,10 +143,12 @@ export default function Features() {
                         <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Up to</h5>
                         <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">4 Car Parks</p>
                     </div>
+                    <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-57%] w-1/2" />
                   </div>
                 </div>
               </div>
             </div>
+            <Image src="/img/features/star-middle-01.png" width="1229" height="464" alt="Star middle" className="absolute top-[39%] left-[25.5%] w-[545px] h-auto" />
           </div>
           <div className="w-full lg:w-[80%] xl:w-[70%] md:gap-4 flex lg:hidden flex-wrap justify-center sm:justify-between m-auto">
             <FeaturesCardMobile
