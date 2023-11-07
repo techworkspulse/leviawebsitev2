@@ -35,7 +35,7 @@ export default function Features() {
       <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto bottom-[14.5%] 3xl:bottom-[19.5%] z-[2]" alt="Facebook" width="500" height="500"/>
         <div className="container w-[90%] sm:w-[85%] mx-auto">
           <div className="w-full lg:w-[80%] xl:w-[70%] md:gap-4 hidden lg:flex flex-wrap justify-center m-auto">
-            <div className="group h-[500px] w-[500px] [perspective:1000px]">
+            <div className="group h-[400px] w-[400px] [perspective:1000px]">
               <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Back  */}
                 <div className="absolute inset-0 [transform:rotateY(180deg)]">
@@ -61,7 +61,7 @@ export default function Features() {
                 </div>
               </div>
             </div>
-            <div className="group h-[500px] w-[500px] [perspective:1000px]">
+            <div className="group h-[400px] w-[400px] [perspective:1000px]">
               <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Back  */}
                 <div className="absolute inset-0 [transform:rotateY(180deg)]">
@@ -87,7 +87,7 @@ export default function Features() {
                 </div>
               </div>
             </div>
-            <div className="group h-[500px] w-[500px] [perspective:1000px]">
+            <div className="group h-[400px] w-[400px] [perspective:1000px]">
               <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Back  */}
                 <div className="absolute inset-0 [transform:rotateY(180deg)]">
@@ -113,7 +113,7 @@ export default function Features() {
                 </div>
               </div>
             </div>
-            <div className="group h-[500px] w-[500px] [perspective:1000px]">
+            <div className="group h-[400px] w-[400px] [perspective:1000px]">
               <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Back  */}
                 <div className="absolute inset-0 [transform:rotateY(180deg)]">
