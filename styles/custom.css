@@ -48,6 +48,18 @@ section{padding: 100px 0;}
 .heroslider .slick-next {
     right: 10%;
 }
+.gallery-slider .swiper-button-next, .gallery-slider .swiper-button-prev{
+    background-color: #BDA37F;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 10px;
+}
+.gallery-slider .swiper-button-next svg, .gallery-slider .swiper-button-prev svg{
+    color: #fff;
+    width: 60%;
+    height: 60%;
+}
 @media (max-width: 960px){
     .slick-slide img.hidden{display: none !important;}
 }
