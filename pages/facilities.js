@@ -5,15 +5,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HeroImageSlider from '@/src/components/HeroImageSlider';
 import Link from 'next/link';
-import { Modal} from 'flowbite-react';
 import FacSlider from '@/src/components/FacilitiesComp/FacSlider';
 import Navmenu from '../src/components/Navmenu';
 import { useScroll, useTransform, useAnimation, motion, Variants } from "framer-motion";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 export default function Facilities() {
   const [activeSlide, setActiveSlide] = useState(0);
   const swiperRef = useRef(null)
+  const [open, setOpen] = useState(false);
 
   const handleSlideChange = (slideIndex) => {
     swiperRef.current.swiper.slideTo(slideIndex);
@@ -56,11 +58,18 @@ export default function Facilities() {
                 <p className="font-GothamBook text-[#858b8c] my-10 leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">LEVIA’s facilities are divided across three zones with distinctive
                     environments that allow one to fully enjoy their lavish offerings.
                 </p>
-                <a onClick={() => props.setOpenModal('default')} className="border-solid border-2 border-[#bda37f] flex justify-center mx-auto lg:mx-0 w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white">
+                <a onClick={() => setOpen(true)} className="border-solid border-2 border-[#bda37f] flex justify-center mx-auto lg:mx-0 w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white">
                     <div className="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px]">
                         Facilities Plan
                     </div>
                 </a>
+                <Lightbox
+                  open={open}
+                  close={() => setOpen(false)}
+                  slides={[
+                    { src: "/img/facilities/fac-plan-zoom-levia-clean.png" },
+                  ]}
+                />
             </div>
         </div>
       </section>
@@ -106,7 +115,7 @@ export default function Facilities() {
         </div>
       </section>
 
-      <section className="relative py-0">
+      <section className="relative py-0 fac-slider">
           <swiper-container 
             ref={swiperRef} 
             onSwiper={(s) => (swiper = s)} 
@@ -159,13 +168,6 @@ export default function Facilities() {
               </swiper-slide>
           </swiper-container>
       </section>
-
-      <Modal dismissible className="full-modal" show={props.openModal === 'default'} size="full-screen" onClose={() => props.setOpenModal(undefined)} popup>
-        <Modal.Header className="border-0 p-0 absolute right-[15px] close"></Modal.Header>
-        <Modal.Body className="p-0 m-0 bg-[#06243F]">
-          <Image src="/img/facilities/fac-plan-zoom-levia-clean.png" className="h-[80vh] object-contain" alt="Facebook" width="2000" height="2000"/>
-        </Modal.Body>
-      </Modal>
     </>
   )
 }
