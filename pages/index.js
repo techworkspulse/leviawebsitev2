@@ -4,20 +4,42 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import StickyButton from '@/src/components/StickyButton';
 import { useEffect, useRef } from 'react';
-import { motion } from "framer-motion";
-import gsap from "gsap";
+import { useScroll, useTransform, useAnimation, motion, Variants } from "framer-motion"; 
+import Navmenu from '../src/components/Navmenu';
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
+  const { ref, inView } = useInView();
+  const secondSectionRef = useRef();
 
-  useEffect( () => {
-    (
-      async () => {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default;
-        const locomotiveScroll = new LocomotiveScroll();
+  useEffect(() => {
+    console.log("use effect hook, inView = ", inView);
+  })
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.2, // Adjust the stagger duration as needed
+      },
+    },
+  };
+  
+  const childVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      transition: { 
+        duration: 0.5, 
+        ease: 'easeIn' 
       }
-    )()
+    },
+  };
 
-  }, [])
+
   return (
     <>
       <Head>
@@ -27,12 +49,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <motion.div
+        ref={secondSectionRef}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Navmenu />
+      </motion.div>
+
       <section className="block sm:hidden"></section>
-      <section className="hidden sm:flex h-screen items-center py-0 mx-auto justify-center">
+      <section
+        className="hidden sm:flex h-screen items-center py-0 mx-auto justify-center flex-col relative">
         <motion.div
-          initial={{ scale: 0 }} 
-          animate={{ scale: 1 }}
-          transition={{ duration: 1.5, }}
+          initial={{ scale: 1, x: 0 }} 
+          animate={{ scale: 0.25, x: 250 }} 
+          transition={{ duration: 2 }}
+          className="absolute top-[22%]"
         >
           <Image
             src="/img/home/star.png"
@@ -42,33 +75,62 @@ export default function Home() {
             height={1000}
           />
         </motion.div>
+        <motion.h1
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 1 }} 
+        transition={{ duration: 1, delay: 2 }} 
+        className="font-GothamBook uppercase text-center tracking-[3px] sm:tracking-[5px] text-[#bda37f] text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]"
+      >
+        An Inspired Oasis <br></br>at the Citys Heart
+      </motion.h1>
       </section>
 
-      <section className="h-fit sm:h-screen flex items-center sm:py-0">
-        <div className="w-[90%] sm:w-[85%] xl:w-[50%] mx-auto relative">
-          <Image src="/img/home/star.png" className="w-[30%] absolute top-[-60%] right-[10%]" alt="Facebook" width="1000" height="1000"/>
-          <h1 className="font-GothamBook uppercase text-center tracking-[3px] sm:tracking-[5px] text-[#bda37f] text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]">An Inspired Oasis <br></br>at the Citys Heart</h1>
-        </div>
-      </section>
-
-      <section className="h-fit sm:h-screen flex items-center sm:py-0">
+      <motion.section
+        ref={secondSectionRef}
+        className="h-fit sm:h-screen flex items-center sm:py-0"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <div className="w-[90%] sm:w-[85%] xl:w-[60%] mx-auto flex flex-col sm:flex-row items-center">
           <div>
-            <div className="flex justify-center sm:justify-end mb-8 sm:mb-14">
-              <Image src="/img/levia-logo.svg" className="w-[50%] ml-0" alt="Facebook" width="800" height="1000"/>
-            </div>
-            <p className="font-GothamBook text-center sm:text-right text-white leading-normal mb-10 lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px]">
-              LEVIA comes from a combination<br></br> of the words Leisure and Via, the latter meaning by way of.</p>
-            <p className="font-GothamBook text-center sm:text-right text-white leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px]">
-              This name emphasises the highly accessible nature of the development, especially with<br></br>
-                surrounding lifestyle amenities and opportunities, inviting people to
-                start a life journey that is easier, enjoyable and exciting.</p>
+            <motion.div
+              variants={childVariants}
+              className="flex justify-center sm:justify-end mb-8 sm:mb-14"
+            >
+              <Image
+                src="/img/levia-logo.svg"
+                className="w-[50%] ml-0"
+                alt="Facebook"
+                width={800}
+                height={1000}
+              />
+            </motion.div>
+            <motion.div variants={childVariants}>
+              <p className="font-GothamBook text-center sm:text-right text-white leading-normal mb-10 lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px]">
+                LEVIA comes from a combination<br></br> of the words Leisure and Via, the latter meaning by way of.
+              </p>
+            </motion.div>
+            <motion.div variants={childVariants}>
+              <p className="font-GothamBook text-center sm:text-right text-white leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px]">
+                This name emphasizes the highly accessible nature of the development, especially with<br></br>
+                surrounding lifestyle amenities and opportunities, inviting people to start a life journey that is easier, enjoyable, and exciting.
+              </p>
+            </motion.div>
           </div>
           <div>
-            <Image src="/img/home/building.png" className="w-full mx-auto" alt="Facebook" width="1920" height="1000"/>
+            <motion.div variants={childVariants}>
+              <Image
+                src="/img/home/building.png"
+                className="w-full mx-auto"
+                alt="Facebook"
+                width={1920}
+                height={1000}
+              />
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
       <Image src="/img/home/aerial.png" className="w-full" alt="Facebook" width="1920" height="1200"/>
       <StickyButton></StickyButton>
     </>
