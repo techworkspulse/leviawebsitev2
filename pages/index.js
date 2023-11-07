@@ -3,7 +3,7 @@ import Image from 'next/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import StickyButton from '@/src/components/StickyButton';
-import { useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useScroll, useTransform, useAnimation, motion, Variants } from "framer-motion"; 
 import Navmenu from '../src/components/Navmenu';
 import { useInView } from "react-intersection-observer";
@@ -14,9 +14,26 @@ export default function Home() {
     threshold: 0, // Adjust this threshold as needed
   });
 
+  const [showMenu, setShowMenu] = useState(false);
+
   useEffect(() => {
-    console.log("use effect hook, inView = ", inView);
-  })
+    const handleScroll = () => {
+      // Adjust the scroll position at which you want to show the menu
+      const scrollPositionToShowMenu = 800; // Adjust this value as needed
+  
+      if (window.scrollY >= scrollPositionToShowMenu) {
+        setShowMenu(true);
+      } else {
+        setShowMenu(false);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const controls = useAnimation();
 
@@ -62,6 +79,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {showMenu && 
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -69,6 +87,7 @@ export default function Home() {
       >
         <Navmenu />
       </motion.div>
+      }
 
       <section
         className="flex h-screen items-center py-0 mx-auto justify-center flex-col relative">
