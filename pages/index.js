@@ -163,7 +163,17 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
-      <Image src="/img/home/aerial.png" className="w-full" alt="Facebook" width="1920" height="1200"/>
+      <div>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-auto object-cover object-top"
+        >
+          <source src="/img/Location-MapLevia_.mp4" type="video/mp4" />
+        </video>
+      </div>
       <StickyButton></StickyButton>
     </>
   )

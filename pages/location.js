@@ -194,7 +194,7 @@ export default function Location() {
         <Image src="/img/star-line-full.svg" className="hidden lg:block w-[30%] 2xl:w-[40%] absolute left-0 right-0 mx-auto sm:bottom-[33.5%] lg:bottom-[32.5%]" alt="Facebook" width="1920" height="1000"/>
         <div className="text-center py-8 w-[85%] lg:w-[70%] xl:w-[60%] mx-auto">
           <h3 className="font-GothamBook uppercase tracking-[3px] sm:tracking-[5px] text-white text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px] mb-5">Convenient <span className="font-ButlerBold text-[#7ea5a2] text-[27px] sm:text-[32px] 2xl:text-[37px] 3xl:text-[52px]">Leisure</span><br></br> <span className="font-ButlerBold text-[#bda37f] text-[27px] sm:text-[32px] md:text-[37px] 3xl:text-[52px]">Via</span> Connections</h3>
-          <p className="font-GothamBook tex-white leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">LEVIA is strategically placed within a mature neighbourhood in Cheras, mere minutes away from Kuala Lumpur City Centre, for residents to enjoy easy access to a wide variety of lifestyle and public amenities.</p>
+          <p className="font-GothamBook text-white leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">LEVIA is strategically placed within a mature neighbourhood in Cheras, mere minutes away from Kuala Lumpur City Centre, for residents to enjoy easy access to a wide variety of lifestyle and public amenities.</p>
         </div>
       </section>
 
