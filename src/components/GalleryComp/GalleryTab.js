@@ -10,7 +10,7 @@ const GalleryTab = () => {
             <div className="hidden lg:flex w-full mx-auto justify-center items-center">
                 <a 
                 onClick={() => setOpenDevTab(2)} 
-                className={`${openDevTab === 2 ? "font-ButlerBold text-[#bda37f] tracking-[3px] uppercase leading-none sm:tracking-[5px]  text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]" : "tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px]"} cursor-pointer uppercase leading-none`}>
+                className={`${openDevTab === 2 ? "font-ButlerBold text-[#bda37f] tracking-[3px] uppercase leading-none sm:tracking-[5px]  text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]" : "tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] text-white"} cursor-pointer uppercase leading-none`}>
                     Virtual Tour
                 </a>
                 <div className="relative text-center w-[50%] xl:w-[40%] mx-auto">
@@ -18,13 +18,13 @@ const GalleryTab = () => {
                     <Image src="/img/line-star.svg" className="w-[30%] right-[-6%] absolute top-[-20%]" alt="Facebook" width="500" height="300"/>
                     <a 
                     onClick={() => setOpenDevTab(1)} 
-                    className={`${openDevTab === 1 ? "font-ButlerBold text-[#bda37f] tracking-[3px] uppercase leading-none sm:tracking-[5px]  text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]" : "tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px]"} cursor-pointer uppercase leading-none`}>
+                    className={`${openDevTab === 1 ? "font-ButlerBold text-[#bda37f] tracking-[3px] uppercase leading-none sm:tracking-[5px]  text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]" : "tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] text-white"} cursor-pointer uppercase leading-none`}>
                         Gallery
                     </a>
                 </div>
                 <a 
                 onClick={() => setOpenDevTab(3)} 
-                className={`${openDevTab === 3 ? "font-ButlerBold text-[#bda37f] tracking-[3px] uppercase leading-none sm:tracking-[5px]  text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]" : "tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px]"} cursor-pointer uppercase leading-none`}>
+                className={`${openDevTab === 3 ? "font-ButlerBold text-[#bda37f] tracking-[3px] uppercase leading-none sm:tracking-[5px]  text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]" : "tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] text-white"} cursor-pointer uppercase leading-none`}>
                     Site Progress
                 </a>
             </div>

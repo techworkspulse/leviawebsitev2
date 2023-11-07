@@ -3,6 +3,7 @@ import Image from "next/image";
 import GalleryTab from "@/src/components/GalleryComp/GalleryTab";
 import Navmenu from '../src/components/Navmenu';
 import { useScroll, useTransform, useAnimation, motion, Variants } from "framer-motion";
+import GallerySlider from "@/src/components/GalleryComp/GallerySlider";
 export default function Gallery() {
     return(
         <>
@@ -26,6 +27,7 @@ export default function Gallery() {
             <section>
                 <div className="container w-[90%] sm:w-[85%] mx-auto">
                     <GalleryTab/>
+                    {/* <GallerySlider/> */}
                 </div>
             </section>
         </>
