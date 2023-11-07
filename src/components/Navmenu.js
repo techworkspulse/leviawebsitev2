@@ -39,7 +39,7 @@ const Navmenu = () => {
         <>
         <nav className={navbarClass}>
             <div className="hidden lg:flex justify-center items-center h-full w-[85%] mx-auto">
-                <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/">Concept</Link>
+                <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/#concept">Concept</Link>
                 <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/features">Features</Link>
                 <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/facilities">Facilities</Link>
                 <Link className="text-white font-GothamBook uppercase tracking-wider text-[14px] lg:text-[13px] xl:text-[16px] mr-6 xl:mr-6 2xl:mr-7" href="/floorplan">Floor Plans</Link>
@@ -98,7 +98,7 @@ const Navmenu = () => {
                   }`}
                 >
                 <div className="flex flex-col justify-center items-center h-full px-[50px]">
-                  <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/">Concept</Link>
+                  <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/#concept">Concept</Link>
                   <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/features">Features</Link>
                   <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/facilities">Facilities</Link>
                   <Link className="text-white font-GothamBook uppercase tracking-wider w-full text-[18px] sm:text-[20px] text-right py-3" href="/floorplan">Floor Plans</Link>

@@ -184,7 +184,11 @@ body {
 
 body {
   background-image: url(../public/img/blue-bg.png);
-  background-size: cover;
+  background-size: 100%;
+  background-color: #03253f;
+  background-repeat: repeat;
+  background-position: top left;
+
 }
 
 a {
