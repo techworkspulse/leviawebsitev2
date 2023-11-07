@@ -72,7 +72,7 @@ const Tab = () => {
                                     <h3 className="font-ButlerBold text-white tracking-[2px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none  uppercase">B</h3>
                                 </div>
                                 <div className="mt-0 sm:mt-14 mb-5">
-                                    <p className="flex items-center justify-center sm:justify-start sm:items-end font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">
+                                    <p className="font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">
                                         <span className="text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[23px] 3xl:text-[25px]">938</span> sq.ft</p>
                                 </div>
                                 <div className="flex flex-row sm:flex-col justify-center sm:justify-end">
@@ -81,7 +81,7 @@ const Tab = () => {
                                     <p className="font-GothamMedium text-white text-right leading-none pl-3 sm:pl-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">2 Baths</p>
                                 </div>
                             </div>
-                            <div className="w-full sm:w-[80%]">
+                            <div className="w-full sm:w-[80%] p-5">
                                 <Image src="/img/floorplan/fp-b.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ const Tab = () => {
             <div className={openDevTab === 2 ? "block" : "hidden"}>
                 <div className="w-full md:gap-4 flex flex-col-reverse lg:flex-row items-center flex-wrap justify-between m-auto">
                     <div className="justify-between col-span-1 w-full md:w-[38%]">
-                        <Image src="/img/floorplan/fp-b-tower.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
+                        <Image src="/img/floorplan/LeviaTypeCLayout-02.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
                         <div>
                         <a className="border-solid border-2 border-[#bda37f] flex justify-center w-fit py-2 px-7 mx-auto text-[#bda37f] hover:bg-[#bda37f] hover:text-white mt-10">
                             <div className="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[20px] 3xl:text-[23px] hover:cursor-pointer">
@@ -109,17 +109,17 @@ const Tab = () => {
                                     <h3 className="font-ButlerBold text-white tracking-[2px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none  uppercase">C</h3>
                                 </div>
                                 <div className="mt-0 sm:mt-14 mb-5">
-                                    <p className="flex items-center justify-center sm:justify-start sm:items-end font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">
-                                        <span className="text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[23px] 3xl:text-[25px]">938</span> sq.ft</p>
+                                    <p className=" font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">
+                                        <span className="text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[23px] 3xl:text-[25px]">1,098</span> sq.ft</p>
                                 </div>
                                 <div className="flex flex-row sm:flex-col justify-center sm:justify-end">
-                                    <p className="font-GothamMedium text-white text-right leading-none pr-3 sm:pr-0 border border-l-0 border-t-0 border-b-0 sm:border-r-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">3 Beds</p>
+                                    <p className="font-GothamMedium text-white text-right leading-none pr-3 sm:pr-0 border border-l-0 border-t-0 border-b-0 sm:border-r-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">3 + 1 Beds</p>
                                     <div className="hidden sm:flex border-b-[1px] border-[#ffffff] w-full my-2"></div>
-                                    <p className="font-GothamMedium text-white text-right leading-none pl-3 sm:pl-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">2 Baths</p>
+                                    <p className="font-GothamMedium text-white text-right leading-none pl-3 sm:pl-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">3 Baths</p>
                                 </div>
                             </div>
-                            <div className="w-full sm:w-[80%]">
-                                <Image src="/img/floorplan/fp-b.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
+                            <div className="w-full sm:w-[80%] p-5">
+                                <Image src="/img/floorplan/LeviaTypeC.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
                             </div>
                         </div>
                     </div>
@@ -129,7 +129,7 @@ const Tab = () => {
             <div className={openDevTab === 3 ? "block" : "hidden"}>
                 <div className="w-full md:gap-4 flex flex-col-reverse lg:flex-row items-center flex-wrap justify-between m-auto">
                     <div className="justify-between col-span-1 w-full md:w-[38%]">
-                        <Image src="/img/floorplan/fp-b-tower.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
+                        <Image src="/img/floorplan/LeviaTypeDLayout-03.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
                         <div>
                         <a className="border-solid border-2 border-[#bda37f] flex justify-center w-fit py-2 px-7 mx-auto text-[#bda37f] hover:bg-[#bda37f] hover:text-white mt-10">
                             <div className="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[20px] 3xl:text-[23px] hover:cursor-pointer">
@@ -146,17 +146,17 @@ const Tab = () => {
                                     <h3 className="font-ButlerBold text-white tracking-[2px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none  uppercase">D</h3>
                                 </div>
                                 <div className="mt-0 sm:mt-14 mb-5">
-                                    <p className="flex items-center justify-center sm:justify-start sm:items-end font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">
-                                        <span className="text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[23px] 3xl:text-[25px]">938</span> sq.ft</p>
+                                    <p className=" font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">
+                                        <span className="text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[23px] 3xl:text-[25px]">1,351</span> sq.ft</p>
                                 </div>
                                 <div className="flex flex-row sm:flex-col justify-center sm:justify-end">
-                                    <p className="font-GothamMedium text-white text-right leading-none pr-3 sm:pr-0 border border-l-0 border-t-0 border-b-0 sm:border-r-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">3 Beds</p>
+                                    <p className="font-GothamMedium text-white text-right leading-none pr-3 sm:pr-0 border border-l-0 border-t-0 border-b-0 sm:border-r-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">4 + 1 Beds</p>
                                     <div className="hidden sm:flex border-b-[1px] border-[#ffffff] w-full my-2"></div>
-                                    <p className="font-GothamMedium text-white text-right leading-none pl-3 sm:pl-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">2 Baths</p>
+                                    <p className="font-GothamMedium text-white text-right leading-none pl-3 sm:pl-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">3 Baths</p>
                                 </div>
                             </div>
-                            <div className="w-full sm:w-[80%]">
-                                <Image src="/img/floorplan/fp-b.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
+                            <div className="w-full sm:w-[80%] p-5">
+                                <Image src="/img/floorplan/LeviaTypeD.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
                             </div>
                         </div>
                     </div>
