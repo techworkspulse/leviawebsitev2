@@ -9,12 +9,25 @@ import Navmenu from '../src/components/Navmenu';
 import { useInView } from "react-intersection-observer";
 
 export default function Home() {
-  const { ref, inView } = useInView();
-  const secondSectionRef = useRef();
+  const [ref, inView] = useInView({
+    triggerOnce: false, // Keep triggering as long as it's in view
+    threshold: 0, // Adjust this threshold as needed
+  });
 
   useEffect(() => {
     console.log("use effect hook, inView = ", inView);
   })
+
+  const controls = useAnimation();
+
+  if (inView) {
+    controls.start({
+      opacity: 1,
+      scale: 0.8,
+      x: '40%',
+      transition: { duration: 2, ease: 'easeIn' },
+    });
+  }
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -50,7 +63,6 @@ export default function Home() {
       </Head>
 
       <motion.div
-        ref={secondSectionRef}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -58,35 +70,35 @@ export default function Home() {
         <Navmenu />
       </motion.div>
 
-      <section className="block sm:hidden"></section>
       <section
-        className="hidden sm:flex h-screen items-center py-0 mx-auto justify-center flex-col relative">
-        <motion.div
-          initial={{ scale: 1, x: 0 }} 
-          animate={{ scale: 0.25, x: 250 }} 
-          transition={{ duration: 2 }}
-          className="absolute top-[22%]"
-        >
-          <Image
-            src="/img/home/star.png"
-            className="w-[50%] mx-auto"
-            alt="Star"
-            width={1920}
-            height={1000}
-          />
-        </motion.div>
-        <motion.h1
-        initial={{ opacity: 0 }} 
-        animate={{ opacity: 1 }} 
-        transition={{ duration: 1, delay: 2 }} 
-        className="font-GothamBook uppercase text-center tracking-[3px] sm:tracking-[5px] text-[#bda37f] text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]"
-      >
-        An Inspired Oasis <br></br>at the Citys Heart
-      </motion.h1>
+        className="flex h-screen items-center py-0 mx-auto justify-center flex-col relative">
+          <div className="relative">
+            <motion.h1
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              transition={{ duration: 1, delay: 2 }} 
+              className="font-GothamBook uppercase text-center tracking-[3px] sm:tracking-[5px] text-[#bda37f] text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]"
+            >
+              An Inspired Oasis <br></br>at the City&apos;s Heart
+            </motion.h1>
+            <motion.div
+              ref={ref}
+              initial={{ scale: 1, x: 0 }} 
+              animate={controls}
+              className="absolute top-[-80%]"
+            >
+              <Image
+                src="/img/home/star.png"
+                className="w-[80%] mx-auto"
+                alt="Star"
+                width={1920}
+                height={1000}
+              />
+            </motion.div>
+          </div>
       </section>
 
       <motion.section
-        ref={secondSectionRef}
         className="h-fit sm:h-screen flex items-center sm:py-0"
         variants={containerVariants}
         initial="hidden"
