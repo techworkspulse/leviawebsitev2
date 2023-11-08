@@ -63,8 +63,8 @@ const FacContent = () => {
                     <div className="text-center">
                       
                         <div className="relative pb-5 w-full xl:w-[80%] mx-auto">
-                          <Image src="/img/line-long-right.svg" className="rotate-180 w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
-                          <Image src="/img/line-long-right.svg" className="w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
+                          <Image src="/img/line-long-right.svg" className="rotate-180 w-[30%] sm:w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
+                          <Image src="/img/line-long-right.svg" className="w-[30%] sm:w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
                           <h5 className="font-GothamBook uppercase tracking-[3px] text-[#bda37f] w-fit mx-auto text-[19px] md:text-[20px] xl:text-[20px] 2xl:text-[22px] 3xl:text-[25px]">Facilities</h5>
                         </div>
 
@@ -108,10 +108,10 @@ const FacContent = () => {
                   <swiper-slide id="slide-1">
                     <div className="flex flex-col items-center justify-center">
                       <Image src="/img/facilities/fac1.png" width="1920" height="700" className="w-full h-[500px] lg:h-[700px]  object-cover" alt="Image 1" />
-                      <div className="text-center py-[100px] w-[85%] xl:w-[60%] mx-auto">
+                      <div className="text-center pt-[30px] sm:py-[100px] w-[85%] xl:w-[60%] mx-auto">
                         <div className="relative w-full lg:w-[60%] mx-auto">
-                            <Image src="/img/line-long-right.svg" className="rotate-180 w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
-                            <Image src="/img/line-long-right.svg" className="w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
+                            <Image src="/img/line-long-right.svg" className="rotate-180 w-[30%] sm:w-[40%] left-[-6%] absolute top-[30%] sm:top-[0%]" alt="Facebook" width="500" height="300"/>
+                            <Image src="/img/line-long-right.svg" className="w-[30%] sm:w-[40%] right-[-6%] absolute top-[30%] sm:top-[0%]" alt="Facebook" width="500" height="300"/>
                             <h3 className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-white mb-5 text-[19px] md:text-[20px] xl:text-[20px] 2xl:text-[22px] 3xl:text-[25px]">The Aqua Zone</h3>
                         </div>
                         <p className="font-GothamBook text-white leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Dip your toes on a sunny day or submerge yourself in the jacuzzi as your stress floats away with the bubbling waters.</p>
@@ -121,10 +121,10 @@ const FacContent = () => {
                   <swiper-slide id="slide-2">
                     <div className="flex flex-col items-center justify-center">
                       <Image src="/img/facilities/fac2.png" width="1920" height="700" className="w-full h-[500px] lg:h-[700px]  object-cover" alt="Image 1" />
-                      <div className="text-center py-[100px] w-[85%] xl:w-[60%] mx-auto">
+                      <div className="text-center pt-[30px] sm:py-[100px] w-[85%] xl:w-[60%] mx-auto">
                         <div className="relative w-full lg:w-[60%] mx-auto">
-                            <Image src="/img/line-long-right.svg" className="rotate-180 w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
-                            <Image src="/img/line-long-right.svg" className="w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
+                            <Image src="/img/line-long-right.svg" className="rotate-180 w-[30%] sm:w-[40%] left-[-6%] absolute top-[30%] sm:top-[0%]" alt="Facebook" width="500" height="300"/>
+                            <Image src="/img/line-long-right.svg" className="w-[30%] sm:w-[40%] right-[-6%] absolute top-[30%] sm:top-[0%]" alt="Facebook" width="500" height="300"/>
                             <h3 className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-white mb-5 text-[19px] md:text-[20px] xl:text-[20px] 2xl:text-[22px] 3xl:text-[25px]">The Eco Zone</h3>
                         </div>
                         <p className="font-GothamBook text-white leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Cook up some burgers and steaks at the Grill Deck or make your way to the Open Green Lawn to bond with your loved ones as you savor warm meals and splendid views.</p>
@@ -134,10 +134,10 @@ const FacContent = () => {
                   <swiper-slide id="slide-3">
                     <div className="flex flex-col items-center justify-center">
                       <Image src="/img/facilities/fac3.png" width="1920" height="700" className="w-full h-[500px] lg:h-[700px]  object-cover" alt="Image 1" />
-                      <div className="text-center py-[100px] w-[85%] xl:w-[60%] mx-auto">
+                      <div className="text-center pt-[30px] sm:py-[100px] w-[85%] xl:w-[60%] mx-auto">
                         <div className="relative w-full lg:w-[60%] mx-auto">
-                            <Image src="/img/line-long-right.svg" className="rotate-180 w-[40%] left-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
-                            <Image src="/img/line-long-right.svg" className="w-[40%] right-[-6%] absolute top-[0%]" alt="Facebook" width="500" height="300"/>
+                            <Image src="/img/line-long-right.svg" className="rotate-180 w-[30%] sm:w-[40%] left-[-6%] absolute top-[30%] sm:top-[0%]" alt="Facebook" width="500" height="300"/>
+                            <Image src="/img/line-long-right.svg" className="w-[30%] sm:w-[40%] right-[-6%] absolute top-[30%] sm:top-[0%]" alt="Facebook" width="500" height="300"/>
                             <h3 className="font-Avgard capitalize tracking-[2px] w-fit mx-auto text-white mb-5 text-[19px] md:text-[20px] xl:text-[20px] 2xl:text-[22px] 3xl:text-[25px]">The Leisure Zone</h3>
                         </div>
                         <p className="font-GothamBook text-white leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Explore nature in the Forest Garden with garden swings and hammocks that envelop you in delight for a peaceful and tranquil everyday experience.</p>
