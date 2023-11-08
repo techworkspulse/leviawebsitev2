@@ -100,4 +100,20 @@ section{padding: 100px 0;}
     .heroimageslider .slick-prev, .heroimageslider .slick-next{
         top: 80%;
     }
+    .fac-slider swiper-container::part(button-prev), .fac-slider swiper-container::part(button-next) {
+        width: 20px;
+        height: 20px;
+    }
+    .gallery-slider swiper-container::part(button-prev),
+    .gallery-slider swiper-container::part(button-next) {
+        background-color: #BDA37F;
+        width: 20px;
+        height: 20px;
+    }
+    .gallery-slider swiper-container::part(button-prev) {
+        left: 1%;
+    }
+    .gallery-slider swiper-container::part(button-next) {
+        right: 1%;
+    }
 }
