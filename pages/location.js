@@ -268,7 +268,7 @@ export default function Location() {
       </section>
 
       <section className="block lg:hidden relative bg-[url('/img/white-bg.png')] bg-cover bg-no-repeat">
-      <div className="container w-[90%] sm:w-[85%] mx-auto">
+        <div className="container w-[90%] sm:w-[85%] mx-auto">
         <div className="w-full">
                 <h5 className="font-GothamBook uppercase text-[#858b8c] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[20px] 3xl:text-[25px]">The</h5>
                 <h3 className="font-ButlerBold uppercase leading-none text-[#bda37f] tracking-[3px] sm:tracking-[5px] text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]">Geography</h3>
@@ -324,7 +324,7 @@ export default function Location() {
                   />
                 </div>
         </div>
-      </div>
+        </div>
       </section>
     </>
   )
