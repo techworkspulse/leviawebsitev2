@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Contact = () => {
+const ContactContent = () => {
     
     return(
         <>
@@ -66,4 +66,4 @@ const Contact = () => {
         </>
     );
 }
-export default Contact;
+export default ContactContent;

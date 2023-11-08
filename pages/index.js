@@ -13,7 +13,7 @@ import GalleryContent from "@/src/components/GalleryComp/GalleryContent";
 import FloorplanContent from "@/src/components/FloorplanComp/FloorplanContent";
 import FacContent from "@/src/components/FacilitiesComp/FacContent";
 import FeaturesContent from "@/src/components/FeaturesComp/FeaturesContent";
-import Contact from '@/src/components/contact';
+import Contact from '@/src/components/ContactContent';
 import Footer from '@/src/components/Footer';
 
 export default function Home() {
