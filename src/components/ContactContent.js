@@ -1,47 +1,10 @@
-import Head from "next/head";
 import Image from "next/image";
-import Navmenu from '../src/components/Navmenu';
-import { useScroll, useTransform, useAnimation, motion, Variants } from "framer-motion";
-import Footer from '@/src/components/Footer';
-import StickyButton from "@/src/components/StickyButton";
-import LocationContent from "@/src/components/LocationComp/LocationContent";
-import RegContent from "@/src/components/RegisterComp/RegContent";
-import GalleryContent from "@/src/components/GalleryComp/GalleryContent";
-import FloorplanContent from "@/src/components/FloorplanComp/FloorplanContent";
-import FacContent from "@/src/components/FacilitiesComp/FacContent";
-import FeaturesContent from "@/src/components/FeaturesComp/FeaturesContent";
 
-export default function contact() {
+const ContactContent = () => {
+    
     return(
         <>
-            <Head>
-                <title>Contact Us</title>
-                <meta name="description" content="Contact Us | Levia Residence" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-            >
-                <Navmenu />
-            </motion.div>
-
-            <FeaturesContent />
-
-            <FacContent />
-
-            <FloorplanContent />
-
-            <GalleryContent />
-
-            <LocationContent />
-
-            <RegContent />
-
-            <section className="pt-[200px]">
+            <section className="pt-[60px] sm:pt-[200px]">
                 <div className="container w-[90%] sm:w-[85%] mx-auto">
                     <div className="relative text-center w-[80%] lg:w-[40%] mx-auto">
                         <Image src="/img/line-star.svg" className="hidden sm:block rotate-180 w-[30%] left-[-10%] absolute top-[-20%]" alt="Facebook" width="500" height="300"/>
@@ -88,7 +51,7 @@ export default function contact() {
             <section className="pt-0">
                 <div className="container w-[90%] sm:w-[85%]  mx-auto">
                     <div className="relative text-center w-[70%] mx-auto">
-                      <Image src="/img/awards/award-title.svg" className="w-full lg:w-[80%] xl:w-[60%] mx-auto" alt="Facebook" width="1000" height="300"/>
+                        <Image src="/img/awards/award-title.svg" className="w-full lg:w-[80%] xl:w-[60%] mx-auto" alt="Facebook" width="1000" height="300"/>
                     </div>
                     <div className="w-fulll xl:w-[80%] mx-auto flex flex-wrap items-center justify-center pt-8 mt-8">
                         <Image src="/img/awards/award1.svg" className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-lg-0" alt="awards" width="135" height="150" />
@@ -100,8 +63,7 @@ export default function contact() {
                     </div>
                 </div>
             </section>
-            <StickyButton></StickyButton>
-            <Footer></Footer>
         </>
     );
 }
+export default ContactContent;

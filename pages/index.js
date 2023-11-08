@@ -7,6 +7,14 @@ import { useState, useEffect, useRef } from 'react';
 import { useScroll, useTransform, useAnimation, motion, Variants } from "framer-motion"; 
 import Navmenu from '../src/components/Navmenu';
 import { useInView } from "react-intersection-observer";
+import LocationContent from "@/src/components/LocationComp/LocationContent";
+import RegContent from "@/src/components/RegisterComp/RegContent";
+import GalleryContent from "@/src/components/GalleryComp/GalleryContent";
+import FloorplanContent from "@/src/components/FloorplanComp/FloorplanContent";
+import FacContent from "@/src/components/FacilitiesComp/FacContent";
+import FeaturesContent from "@/src/components/FeaturesComp/FeaturesContent";
+import Contact from '@/src/components/ContactContent';
+import Footer from '@/src/components/Footer';
 
 export default function Home() {
   const [ref, inView] = useInView({
@@ -125,7 +133,7 @@ export default function Home() {
         id="concept"
       >
         <div className="w-[90%] sm:w-[85%] xl:w-[60%] mx-auto flex flex-col sm:flex-row items-center">
-          <div className="w-1/2">
+          <div className="w-full sm:w-1/2">
             <motion.div
               variants={childVariants}
               className="flex justify-center sm:justify-end mb-8 sm:mb-14"
@@ -150,7 +158,7 @@ export default function Home() {
               </p>
             </motion.div>
           </div>
-          <div className="w-1/2">
+          <div className="w-full sm:w-1/2">
             <motion.div variants={childVariants}>
               <Image
                 src="/img/rsz_levia_building_sketch_kurttry.png"
@@ -163,6 +171,8 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+
+      {/* Video  */}
       <div>
         <video
           autoPlay
@@ -174,7 +184,23 @@ export default function Home() {
           <source src="/img/Location-MapLevia_.mp4" type="video/mp4" />
         </video>
       </div>
+      
+      <FeaturesContent />
+
+      <FacContent />
+
+      <FloorplanContent />
+
+      <GalleryContent />
+
+      <LocationContent />
+
+      <RegContent />
+
+      <Contact />
+      
       <StickyButton></StickyButton>
+      <Footer></Footer>
     </>
   )
 }
