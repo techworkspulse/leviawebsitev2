@@ -5,7 +5,7 @@ import Tab from "./Tab";
 const FloorplanContent = () => {
     return(
         <>
-        <section>
+        <section id="floorplan">
             <div className="container w-[90%] sm:w-[85%] mx-auto">
                 <div className="lg:w-full xl:w-[80%] mx-auto">
                     <Image src="/img/floorplan/tower.png" className="w-full" alt="Facebook" width="1000" height="1000"/>

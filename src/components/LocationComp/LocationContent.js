@@ -166,7 +166,7 @@ const LocationContent = () => {
 
     return(
         <>
-        <section className="relative pt-0">
+        <section id="location" className="relative pt-0">
             <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto top-[48%] z-[2]" alt="Facebook" width="500" height="500"/>
             <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto bottom-[-23%] z-[2]" alt="Facebook" width="500" height="500"/>
             <HeroImageSlider
