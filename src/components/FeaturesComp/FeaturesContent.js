@@ -10,7 +10,7 @@ const FeaturesContent = () => {
     
     return(
         <>
-            <section className="relative py-0">
+            <section id="features" className="relative py-0">
                 <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto bottom-[14.5%] 3xl:bottom-[19.5%] z-[2]" alt="Facebook" width="500" height="500"/>
                 <HeroSlider />
             </section>
