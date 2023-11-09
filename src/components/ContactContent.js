@@ -88,14 +88,61 @@ const ContactContent = () => {
                     <div className="relative text-center w-[70%] mx-auto">
                         <Image src="/img/awards/award-title.svg" className="w-full lg:w-[80%] xl:w-[60%] mx-auto" alt="Facebook" width="1000" height="300"/>
                     </div>
-                    <div className="w-fulll xl:w-[80%] mx-auto flex flex-wrap items-center justify-center pt-8 mt-8">
-                        <Image src="/img/awards/award1.svg" className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-lg-0" alt="awards" width="135" height="150" />
-                        <Image src="/img/awards/award2.svg" className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-lg-0" alt="awards" width="139" height="150" />
-                        <Image src="/img/awards/award3.svg" className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-lg-0" alt="awards" width="300" height="87" />
-                        <Image src="/img/awards/award4.svg" className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-sm-0" alt="awards" width="248" height="150" />
-                        <Image src="/img/awards/award5.svg" className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-sm-0" alt="awards" width="64" height="150" />
-                        <Image src="/img/awards/award6.svg" className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-sm-0" alt="awards" width="147" height="150" />
-                    </div>
+                    <motion.div 
+                        className="w-fulll xl:w-[80%] mx-auto flex flex-wrap items-center justify-center pt-8 mt-8"
+                        variants={variants}
+                        initial="hidden"
+                        whileInView="show"
+                    >
+                        <motion.img 
+                            src="/img/awards/award1.svg" 
+                            className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-lg-0" 
+                            alt="awards" 
+                            width="135" 
+                            height="150" 
+                            variants={paragraf}
+                        />
+                        <motion.img 
+                            src="/img/awards/award2.svg" 
+                            className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-lg-0" 
+                            alt="awards" 
+                            width="139" 
+                            height="150" 
+                            variants={paragraf}
+                        />
+                        <motion.img 
+                            src="/img/awards/award3.svg" 
+                            className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-lg-0" 
+                            alt="awards" 
+                            width="300" 
+                            height="87" 
+                            variants={paragraf}
+                        />
+                        <motion.img 
+                            src="/img/awards/award4.svg" 
+                            className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-sm-0" 
+                            alt="awards" 
+                            width="248" 
+                            height="150" 
+                            variants={paragraf}
+                        />
+                        <motion.img 
+                            src="/img/awards/award5.svg" 
+                            className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-sm-0" 
+                            alt="awards" 
+                            width="64" 
+                            height="150" 
+                            variants={paragraf}
+                        />
+                        <motion.img 
+                            src="/img/awards/award6.svg" 
+                            className="max-h-[120px] w-[48%] sm:w-[28%] lg:w-[15%] object-contain mb-8 mb-sm-0" 
+                            alt="awards" 
+                            width="147" 
+                            height="150" 
+                            variants={paragraf}
+                        />
+                    </motion.div>
                 </div>
             </section>
         </>
