@@ -7,7 +7,7 @@ const RegContent = () => {
     
     return(
         <>
-            <section className="pt-0 bg-[url('/img/white-bg.png')] bg-cover bg-center"></section>
+            <section id="register" className="pt-0 bg-[url('/img/white-bg.png')] bg-cover bg-center"></section>
             <section className="hidden xl:block bg-[url('/img/white-bg.png')] bg-cover bg-center">
                     <div className="w-full md:gap-0 flex flex-wrap justify-between items-center">
                         <div className="relative w-full xl:w-[40%] fac-image">

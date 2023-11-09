@@ -4,8 +4,7 @@ import GalleryTab from "./GalleryTab";
 const GalleryContent = () => {
     return(
         <>
-            <section className="pt-0"></section>
-            <section>
+            <section id="gallery">
                 <div className="container w-[90%] sm:w-[85%] mx-auto">
                     <GalleryTab/>
                     {/* <GallerySlider/> */}
