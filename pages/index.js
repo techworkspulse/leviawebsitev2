@@ -24,6 +24,30 @@ export default function Home() {
 
   const [showMenu, setShowMenu] = useState(false);
 
+  const variants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const paragraf = {
+    hidden: {
+      opacity: 0,
+      y: 40,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1
+      },
+    },
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       // Adjust the scroll position at which you want to show the menu
@@ -53,29 +77,6 @@ export default function Home() {
       transition: { duration: 2, ease: 'easeIn' },
     });
   }
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.2, // Adjust the stagger duration as needed
-      },
-    },
-  };
-  
-  const childVariants = {
-    hidden: { opacity: 0, x: -50 },
-    visible: { 
-      opacity: 1, 
-      x: 0,
-      transition: { 
-        duration: 0.5, 
-        ease: 'easeIn' 
-      }
-    },
-  };
 
 
   return (
@@ -127,15 +128,15 @@ export default function Home() {
 
       <motion.section
         className="h-fit sm:h-screen flex items-center sm:py-0"
-        variants={containerVariants}
+        variants={variants}
         initial="hidden"
-        animate="visible"
+        whileInView="show"
         id="concept"
       >
         <div className="w-[90%] sm:w-[85%] xl:w-[60%] mx-auto flex flex-col sm:flex-row items-center">
           <div className="w-full sm:w-1/2">
             <motion.div
-              variants={childVariants}
+              variants={paragraf}
               className="flex justify-center sm:justify-end mb-8 sm:mb-14"
             >
               <Image
@@ -146,12 +147,12 @@ export default function Home() {
                 height={1000}
               />
             </motion.div>
-            <motion.div variants={childVariants}>
+            <motion.div variants={paragraf}>
               <p className="font-GothamBook text-center sm:text-right text-white leading-normal mb-10 lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px]">
                 LEVIA comes from a combination<br></br> of the words Leisure and Via, the latter meaning by way of.
               </p>
             </motion.div>
-            <motion.div variants={childVariants}>
+            <motion.div variants={paragraf}>
               <p className="font-GothamBook text-center sm:text-right text-white leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px]">
                 This name emphasizes the highly accessible nature of the development, especially with<br></br>
                 surrounding lifestyle amenities and opportunities, inviting people to start a life journey that is easier, enjoyable, and exciting.
@@ -159,7 +160,7 @@ export default function Home() {
             </motion.div>
           </div>
           <div className="w-full sm:w-1/2">
-            <motion.div variants={childVariants}>
+            <motion.div variants={paragraf}>
               <Image
                 src="/img/rsz_levia_building_sketch_kurttry.png"
                 className="w-full mx-auto"

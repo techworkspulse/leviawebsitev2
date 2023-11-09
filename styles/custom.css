@@ -87,7 +87,7 @@ section{padding: 100px 0;}
 }
 @media (max-width: 500px){
     section{padding: 50px 0;}
-    .dropdown-custom button span{font-size: 20px;letter-spacing: 3px;padding: 10px 15px; line-height: 1.5;}
+    .dropdown-custom button span{font-size: 16px;letter-spacing: 1px;padding: 10px 15px; line-height: 1;text-transform: capitalize;}
     .dropdown-custom button{font-size: 15px;}
     .dropdown-custom .z-10.rounded.divide-y.divide-gray-100.shadow {
         width: 75%!important;

@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import HeroImageSlider from "../HeroImageSlider";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import { useScroll, useTransform, useAnimation, motion, Variants } from "framer-motion";
 
 const FacContent = () => {
     const swiperRef = useRef(null)
@@ -17,6 +18,30 @@ const FacContent = () => {
 
     const [openModal, setOpenModal] = useState();
     const props = { openModal, setOpenModal };
+
+    const variants = {
+        hidden: { opacity: 0 },
+        show: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.3,
+          },
+        },
+    };
+    
+    const paragraf = {
+        hidden: {
+            opacity: 0,
+            y: 40,
+        },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+            duration: 1
+            },
+        },
+    };
     
     return (
         <>
@@ -31,16 +56,32 @@ const FacContent = () => {
 
           <section className="relative bg-[url('/img/white-bg.png')] bg-cover bg-no-repeat">
             <div className="container w-[90%] sm:w-[85%] mx-auto">
-                <div className="w-full lg:w-[40%] text-center lg:text-left">
-                    <h3 className="font-GothamBook uppercase text-[#858b8c] tracking-[3px] sm:tracking-[5px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px]">Everyday Rejuvenating <span className="font-ButlerBold text-[#7ea5a2] text-[27px] sm:text-[32px] 2xl:text-[37px] 3xl:text-[52px]">Leisure</span><br></br> <span className="font-ButlerBold text-[#bda37f] text-[27px] sm:text-[32px] 2xl:text-[37px] 3xl:text-[52px]">Via</span> Evergreen Opportunities</h3>
-                    <p className="font-GothamBook text-[#858b8c] my-10 leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">LEVIA’s facilities are divided across three zones with distinctive
-                        environments that allow one to fully enjoy their lavish offerings.
-                    </p>
-                    <a onClick={() => setOpen(true)} className="border-solid border-2 border-[#bda37f] flex justify-center mx-auto lg:mx-0 w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white">
+                <motion.div 
+                  className="w-full lg:w-[40%] text-center lg:text-left"
+                  variants={variants}
+                  initial="hidden"
+                  whileInView="show"
+                >
+                    <motion.h3 
+                      className="font-GothamBook uppercase text-[#858b8c] tracking-[3px] sm:tracking-[5px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px]"
+                      variants={paragraf}
+                    >
+                      Everyday Rejuvenating <span className="font-ButlerBold text-[#7ea5a2] text-[27px] sm:text-[32px] 2xl:text-[37px] 3xl:text-[52px]">Leisure</span><br></br> <span className="font-ButlerBold text-[#bda37f] text-[27px] sm:text-[32px] 2xl:text-[37px] 3xl:text-[52px]">Via</span> Evergreen Opportunities
+                    </motion.h3>
+                    <motion.p 
+                      className="font-GothamBook text-[#858b8c] my-10 leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]"
+                      variants={paragraf}
+                    > LEVIA’s facilities are divided across three zones with distinctive environments that allow one to fully enjoy their lavish offerings.
+                    </motion.p>
+                    <motion.a 
+                      onClick={() => setOpen(true)} 
+                      className="border-solid border-2 border-[#bda37f] flex justify-center mx-auto lg:mx-0 w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white"
+                      variants={paragraf}
+                    >
                         <div className="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px]">
                             Facilities Plan
                         </div>
-                    </a>
+                    </motion.a>
                     <Lightbox
                       open={open}
                       close={() => setOpen(false)}
@@ -48,7 +89,7 @@ const FacContent = () => {
                         { src: "/img/facilities/fac-plan-zoom-levia-clean.png" },
                       ]}
                     />
-                </div>
+                </motion.div>
             </div>
           </section>
 
