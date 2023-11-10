@@ -16,8 +16,8 @@ const GallerySlider = () => {
                 </swiper-slide>
                 <swiper-slide>
                     <div className="p-1">
-                        <Image src="/img/gallery/gallery2.png" className="w-full max-h-[800px] object-contain" alt="Lobby Launge" width={1920} height={1000} />
-                        <p className="font-GothamBook text-white text-center uppercase leading-normal mt-10 lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Lobby Launge</p>
+                        <Image src="/img/gallery/gallery2.png" className="w-full max-h-[800px] object-contain" alt="Lobby Lounge" width={1920} height={1000} />
+                        <p className="font-GothamBook text-white text-center uppercase leading-normal mt-10 lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Lobby Lounge</p>
                     </div>
                 </swiper-slide>
             </swiper-container>
