@@ -72,7 +72,7 @@ const Tab = () => {
                                     <h3 className="font-ButlerBold text-white tracking-[2px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none  uppercase">B</h3>
                                 </div>
                                 <div className="mt-0 sm:mt-14 mb-5">
-                                    <p className="font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">
+                                    <p className="font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px] text-center sm:text-left">
                                         <span className="text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[23px] 3xl:text-[25px]">938</span> sq.ft</p>
                                 </div>
                                 <div className="flex flex-row sm:flex-col justify-center sm:justify-end">
@@ -109,7 +109,7 @@ const Tab = () => {
                                     <h3 className="font-ButlerBold text-white tracking-[2px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none  uppercase">C</h3>
                                 </div>
                                 <div className="mt-0 sm:mt-14 mb-5">
-                                    <p className=" font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">
+                                    <p className=" font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px] text-center sm:text-left">
                                         <span className="text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[23px] 3xl:text-[25px]">1,098</span> sq.ft</p>
                                 </div>
                                 <div className="flex flex-row sm:flex-col justify-center sm:justify-end">
@@ -146,7 +146,7 @@ const Tab = () => {
                                     <h3 className="font-ButlerBold text-white tracking-[2px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none  uppercase">D</h3>
                                 </div>
                                 <div className="mt-0 sm:mt-14 mb-5">
-                                    <p className=" font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">
+                                    <p className=" font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px] text-center sm:text-left">
                                         <span className="text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[23px] 3xl:text-[25px]">1,351</span> sq.ft</p>
                                 </div>
                                 <div className="flex flex-row sm:flex-col justify-center sm:justify-end">
