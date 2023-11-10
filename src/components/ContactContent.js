@@ -47,37 +47,59 @@ const ContactContent = () => {
                         </motion.h3>
                     </motion.div>
                     <div className="w-full xl:w-[90%] 2xl:w-[85%] mx-auto flex flex-col sm:flex-row items-center sm:items-end mt-8 lg:mt-14">
-                        <Image src="/img/awards/matrix-logo.svg" className="w-fit max-h-[120px] mr-0 sm:mr-8 mb-3 sm:mb-0" alt="Matrix Logo" width="300" height="300"/>
-                        <div className="text-center sm:text-left mb-5">
-                            <p class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Head Office<br></br>Wisma Matrix, No.57, Jalan Tun Dr. Ismail,<br></br>70200 Seremban, Negeri Sembilan D.K. Malaysia</p>
-                            <div className="flex items-center justify-center sm:justify-start">
+                        <motion.div 
+                            className="text-center sm:text-left mb-5 sm:ml-[150px]"
+                            variants={variants}
+                            initial="hidden"
+                            whileInView="show"
+                        >
+                            <motion.p 
+                                class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]"
+                                variants={paragraf}
+                            >
+                                Head Office<br></br>Wisma Matrix, No.57, Jalan Tun Dr. Ismail,<br></br>70200 Seremban, Negeri Sembilan D.K. Malaysia
+                            </motion.p>
+                            <motion.div 
+                                className="flex items-center justify-center sm:justify-start"
+                                variants={paragraf}
+                            >
                                 <a href="tel:067642688" class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px] mr-3">T +606 764 2688</a>
                                 <a href="tel:0676426288" class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">F +606 764 6288</a>
-                            </div>
-                        </div>
+                            </motion.div>
+                        </motion.div>
                     </div>
                     <div className="w-full xl:w-[90%] 2xl:w-[85%] mx-auto mt-5">
                         <div className="flex flex-col lg:flex-row items-center justify-between">
-                            <div className="flex flex-col sm:flex-row items-center sm:items-start flex-1 w-full lg:w-fit border-none lg:border-solid border border-[#bda37f] border-b-0 border-t-0 border-l-0 pr-0 lg:pr-5">
-                                <Image src="/img/levia-logo.svg" className="w-fit max-h-[120px] mr-0 sm:mr-8 mb-5 mb-sm-0" alt="Facebook" width="300" height="300"/>
-                                <div className="text-center sm:text-left">
+                            <motion.div
+                                variants={variants}
+                                initial="hidden"
+                                whileInView="show" 
+                                className="flex flex-col sm:flex-row items-center sm:items-start flex-1 w-full lg:w-fit border-none lg:border-solid border border-[#bda37f] border-b-0 border-t-0 border-l-0 pr-0 lg:pr-5"
+                            >
+                                <motion.img variants={paragraf} src="/img/awards/matrix-logo.svg" className="w-fit max-h-[120px] mr-0 sm:mr-8 mb-3 sm:mb-0 sm:mt-[-85px]" alt="Matrix Logo" width="300" height="300"/>
+                                <motion.div variants={paragraf} className="text-center sm:text-left">
                                     <p class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Branch Office<br></br>A-1-5, Block A, Setiawalk, Persiaran Wawasan,<br></br>
                                     Pusat Bandar Puchong, 41760 Puchong,<br></br>Selangor Malaysia.</p>
                                     <div>
                                         <a href="tel:0327877922" class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px] mr-3">T +603 278 7792</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="flex flex-col sm:flex-row items-center flex-1 w-full lg:w-fit justify-start lg:justify-end pl-0 lg:pl-5 mt-8 lg:mt-0">
-                                <Image src="/img/levia-logo.svg" className="w-fit max-h-[120px] mr-0 sm:mr-8 mb-5 mb-sm-0" alt="Facebook" width="300" height="300"/>
-                                <div className="text-center sm:text-left">
+                                </motion.div>
+                            </motion.div>
+                            <motion.div 
+                                className="flex flex-col sm:flex-row items-center flex-1 w-full lg:w-fit justify-start lg:justify-end pl-0 lg:pl-5 mt-8 lg:mt-0"
+                                variants={variants}
+                                initial="hidden"
+                                whileInView="show" 
+                            >
+                                <motion.img variants={paragraf} src="/img/levia-logo.svg" className="w-fit max-h-[120px] mr-0 sm:mr-8 mb-5 mb-sm-0" alt="Facebook" width="300" height="300"/>
+                                <motion.div variants={paragraf} className="text-center sm:text-left">
                                     <p class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Levia Sales Gallery<br></br>20, Jalan 5/91a, Taman Shamelin Perkasa, <br></br>
                                     56100 Kuala Lumpur, Wilayah Persekutuan<br></br> Kuala Lumpur.</p>
                                     <div>
                                         <a href="tel:0327877922" class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px] mr-3">T +603 278 7792</a>
                                     </div>
-                                </div>
-                            </div>
+                                </motion.div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>
