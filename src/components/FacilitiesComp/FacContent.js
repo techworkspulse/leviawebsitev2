@@ -13,14 +13,14 @@ const FacContent = () => {
     const [open, setOpen] = useState(false);
 
     const handleSlideChange = (slideIndex) => {
-      swiperRef.current.swiper.slideTo(slideIndex);
-      
+      const targetSection = document.getElementById(`facilitiesSlider`);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    
       // After a short delay, trigger the smooth scroll
       setTimeout(() => {
-        const targetSection = document.getElementById(`slide-${slideIndex + 1}`);
-        if (targetSection) {
-          targetSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        swiperRef.current.swiper.slideTo(slideIndex);
       }, 500); // Adjust the delay as needed
     };
 
@@ -142,7 +142,7 @@ const FacContent = () => {
             </div>
           </section>
 
-          <section className="relative py-0 fac-slider">
+          <section id="facilitiesSlider" className="relative py-0 fac-slider">
               <swiper-container 
                 ref={swiperRef} 
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
