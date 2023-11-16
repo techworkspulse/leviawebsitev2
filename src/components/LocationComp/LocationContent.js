@@ -123,7 +123,7 @@ const LocationContent = () => {
         },
         {
             "km": 4.4,
-            "location": "Cochrane mRt"
+            "location": "Cochrane MRT"
         },
         {
             "km": 4.7,
