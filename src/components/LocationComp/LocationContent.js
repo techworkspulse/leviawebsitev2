@@ -230,7 +230,7 @@ const LocationContent = () => {
     ]
     };
     
-    const [activeAccordion, setActiveAccordion] = useState('mall'); 
+    const [activeAccordion, setActiveAccordion] = useState('leisure'); 
 
     const variants = {
         hidden: { opacity: 0 },
