@@ -57,7 +57,7 @@ const ContactContent = () => {
                                 class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]"
                                 variants={paragraf}
                             >
-                                Head Office<br></br>Wisma Matrix, No.57, Jalan Tun Dr. Ismail,<br></br>70200 Seremban, Negeri Sembilan D.K. Malaysia
+                                Matrix Concepts Holdings Berhad - 199601042262 (414615-U)<br></br>Wisma Matrix, No.57, Jalan Tun Dr. Ismail,<br></br>70200 Seremban, Negeri Sembilan D.K. Malaysia
                             </motion.p>
                             <motion.div 
                                 className="flex items-center justify-center sm:justify-start"
@@ -78,7 +78,7 @@ const ContactContent = () => {
                             >
                                 <motion.img variants={paragraf} src="/img/awards/matrix-logo.svg" className="w-fit max-h-[120px] mr-0 sm:mr-8 mb-3 sm:mb-0 sm:mt-[-85px]" alt="Matrix Logo" width="300" height="300"/>
                                 <motion.div variants={paragraf} className="text-center sm:text-left">
-                                    <p class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Branch Office<br></br>A-1-5, Block A, Setiawalk, Persiaran Wawasan,<br></br>
+                                    <p class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">Matrix Concepts (Cheras) Sdn Bhd - 201701015888 (1230052-H)<br></br>A-1-5, Block A, Setiawalk, Persiaran Wawasan,<br></br>
                                     Pusat Bandar Puchong, 41760 Puchong,<br></br>Selangor Malaysia.</p>
                                     <div>
                                         <a href="tel:0327877922" class="font-Avgardn text-[#bda37f] leading-7 tracking-[1px] text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px] mr-3">T +603 278 7792</a>

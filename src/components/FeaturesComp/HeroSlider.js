@@ -75,7 +75,7 @@ export default class HeroSlider extends Component {
                     variants={paragraf}
                     className="font-GothamBook text-white leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]"
                   >
-                      Celebrate dynamic excellence in life within the dazzling towers of LEVIA, a new vertical residence that integrates creative architecture and lush greenery across 5.2 acres of open space to offer both comfort and beauty.
+                      Celebrate dynamic excellence in life within the dazzling towers of LEVIA, a new vertical residence that integrates creative architecture and lush greenery across 4.7 acres of open space to offer both comfort and beauty.
                   </motion.p>
                 </motion.div>
               </motion.div>

@@ -14,6 +14,14 @@ const FacContent = () => {
 
     const handleSlideChange = (slideIndex) => {
       swiperRef.current.swiper.slideTo(slideIndex);
+      
+      // After a short delay, trigger the smooth scroll
+      setTimeout(() => {
+        const targetSection = document.getElementById(`slide-${slideIndex + 1}`);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500); // Adjust the delay as needed
     };
 
     const [openModal, setOpenModal] = useState();
@@ -137,7 +145,7 @@ const FacContent = () => {
           <section className="relative py-0 fac-slider">
               <swiper-container 
                 ref={swiperRef} 
-                onSwiper={(s) => (swiper = s)} 
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
                 slides-per-view="1" 
                 speed="500" 
                 spaceBetween="0" 
