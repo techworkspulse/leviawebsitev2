@@ -22,7 +22,9 @@ const LocationAccordion = ({id,title,locations,setActiveAccordion, active}) => {
                 <div id={`${id}-container`}>
                     {locations.map((location, index) => (
                         <div key={index} className="flex items-center justify-start mb-3 last:mb-0">
+                            {location.km && (
                             <p className="font-GothamBook text-black leading-none text-[14px] sm:text-[16px] md:text-[17px] lg:text-[16px] xl:text-[16px] 2xl:text-[17px] 3xl:text-[19px] w-[15%] mr-3">{location.km} km</p>
+                            )}
                             <p className="font-GothamBook text-black leading-none text-[14px] sm:text-[16px] md:text-[17px] lg:text-[16px] xl:text-[16px] 2xl:text-[17px] 3xl:text-[19px]">{location.location}</p>
                         </div>
                     ))}

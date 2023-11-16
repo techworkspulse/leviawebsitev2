@@ -182,7 +182,7 @@ export default function Home() {
           playsInline
           className="w-full h-auto object-cover object-top"
         >
-          <source src="/img/Location-MapLevia_.mp4" type="video/mp4" />
+          <source src="/img/Location-Map-Levia_2.mp4" type="video/mp4" />
         </video>
       </div>
       
