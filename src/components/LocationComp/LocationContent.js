@@ -12,21 +12,13 @@ const LocationContent = () => {
     "title": "Leisure & Recreations",
     "locations": [
         {
-            "km": 10,
-            "location": "City A"
+            "km": 3.6,
+            "location": "Taman Pudu Ulu"
         },
         {
-            "km": 25,
-            "location": "Town B"
+            "km": 5.6,
+            "location": "Taman Tasik Permaisuri"
         },
-        {
-            "km": 40,
-            "location": "Village C"
-        },
-        {
-            "km": 60,
-            "location": "City D"
-        }
     ]
     };
     const commercialData = {
@@ -34,20 +26,28 @@ const LocationContent = () => {
     "title": "Commercial Centres",
     "locations": [
         {
-            "km": 10,
-            "location": "City A"
+            "km": 2.4,
+            "location": "Cheras Business Centre"
         },
         {
-            "km": 25,
-            "location": "Town B"
+            "km": 5.3,
+            "location": "Pandan Jaya"
         },
         {
-            "km": 40,
-            "location": "Village C"
+            "km": 5.5,
+            "location": "Taman Komersial Pandan Indah"
         },
         {
-            "km": 60,
-            "location": "City D"
+            "km": 8.2,
+            "location": "Bukit Bintang"
+        },
+        {
+            "km": 9.8,
+            "location": "Tun Razak Exchange (TRX)"
+        },
+        {
+            "km": 9.8,
+            "location": "Merdeka 118"
         }
     ]
     };
@@ -56,20 +56,40 @@ const LocationContent = () => {
     "title": "Shopping Malls & Supermarkets",
     "locations": [
         {
-            "km": 10,
-            "location": "City A"
+            "km": 2.7,
+            "location": "Cheras LeisureMall"
         },
         {
-            "km": 25,
-            "location": "Town B"
+            "km": 2.9,
+            "location": "Lotus Cheras"
         },
         {
-            "km": 40,
-            "location": "Village C"
+            "km": 5.3,
+            "location": "EkoCheras Mall"
         },
         {
-            "km": 60,
-            "location": "City D"
+            "km": 5.3,
+            "location": "IKEA Cheras"
+        },
+        {
+            "km": 5.5,
+            "location": "Sunway Velocity Mall"
+        },
+        {
+            "km": 6.2,
+            "location": "MyTown Shopping Centre"
+        },
+        {
+            "km": 8.5,
+            "location": "BBCC"
+        },
+        {
+            "km": 10.2,
+            "location": "Pavilion Kuala Lumpur"
+        },
+        {
+            "km": 10.4,
+            "location": "Suria KLCC"
         }
     ]
     };
@@ -78,20 +98,36 @@ const LocationContent = () => {
     "title": "Transportation",
     "locations": [
         {
-            "km": 10,
-            "location": "City A"
+            "km": 0.7,
+            "location": "Future MRT 3 Cheras"
         },
         {
-            "km": 25,
-            "location": "Town B"
+            "km": 1.0,
+            "location": "Future MRT 3 Taman Kencana"
         },
         {
-            "km": 40,
-            "location": "Village C"
+            "km": 2.3,
+            "location": "Taman Pertama MRT"
         },
         {
-            "km": 60,
-            "location": "City D"
+            "km": 2.8,
+            "location": "Taman Midah MRT"
+        },
+        {
+            "km": 3.1,
+            "location": "Taman Mutiara MRT"
+        },
+        {
+            "km": 3.9,
+            "location": "Maluri MRT"
+        },
+        {
+            "km": 4.4,
+            "location": "Cochrane mRt"
+        },
+        {
+            "km": 4.7,
+            "location": "Taman Connaught MRT"
         }
     ]
     };
@@ -100,20 +136,36 @@ const LocationContent = () => {
     "title": "Educational Institutions",
     "locations": [
         {
-            "km": 10,
-            "location": "City A"
+            "km": 2.5,
+            "location": "Sri Sempurna International School"
         },
         {
-            "km": 25,
-            "location": "Town B"
+            "km": 6.1,
+            "location": "UCSI University"
         },
         {
-            "km": 40,
-            "location": "Village C"
+            "km": 6.2,
+            "location": "Sunway College @ Velocity"
         },
         {
-            "km": 60,
-            "location": "City D"
+            "km": 6.3,
+            "location": "Taylor's International School"
+        },
+        {
+            "km": 6.6,
+            "location": " Cempaka National Schools"
+        },
+        {
+            "km": 8.3,
+            "location": "Tsun Jin High School"
+        },
+        {
+            "km": 9.4,
+            "location": "Kuen Cheng High School"
+        },
+        {
+            "km": 10.0,
+            "location": "INTI International College"
         }
     ]
     };
@@ -122,20 +174,36 @@ const LocationContent = () => {
     "title": "Healthcare",
     "locations": [
         {
-            "km": 10,
-            "location": "City A"
+            "km": 2.1,
+            "location": "Pantai Hospital Cheras "
         },
         {
-            "km": 25,
-            "location": "Town B"
+            "km": 3.6,
+            "location": "Pantai Hospital Ampang"
         },
         {
-            "km": 40,
-            "location": "Village C"
+            "km": 3.8,
+            "location": "Hospital Canselor Tuanku Muhriz UKM"
         },
         {
-            "km": 60,
-            "location": "City D"
+            "km": 5.0,
+            "location": "Ampang Hospital"
+        },
+        {
+            "km": 5.9,
+            "location": "Sunway Medical Centre Velocity"
+        },
+        {
+            "km": 7.2,
+            "location": "Gleneagles KL Medical Centre"
+        },
+        {
+            "km": 9.0,
+            "location": "Prince Court Medical Centre"
+        },
+        {
+            "km": 10.2,
+            "location": "Tung Shin Hospital"
         }
     ]
     };
@@ -144,20 +212,20 @@ const LocationContent = () => {
     "title": "Access Points",
     "locations": [
         {
-            "km": 10,
-            "location": "City A"
+            "km": "",
+            "location": "Kuala Lumpur Middle Ring Road 2 (MRR2)"
         },
         {
-            "km": 25,
-            "location": "Town B"
+            "km": "",
+            "location": "East-West Link Expressway"
         },
         {
-            "km": 40,
-            "location": "Village C"
+            "km": "",
+            "location": "Kajang-Seremban Highway"
         },
         {
-            "km": 60,
-            "location": "City D"
+            "km": "",
+            "location": "Sungai Besi Expressway"
         }
     ]
     };
