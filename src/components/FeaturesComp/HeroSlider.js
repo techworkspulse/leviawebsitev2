@@ -58,7 +58,7 @@ export default class HeroSlider extends Component {
                 whileInView="show"
               >
                 <Image src="/img/features/banner1.png" className="w-full h-[500px] lg:h-[700px] object-cover" alt="Facebook" width="1920" height="1000"/>
-                <Image src="/img/star-line-full.svg" className="hidden lg:block w-[30%] 2xl:w-[40%] absolute left-0 right-0 mx-auto bottom-[25.5%] 3xl:bottom-[26.5%]" alt="Facebook" width="1920" height="1000"/>
+                <Image src="/img/star-line-full.svg" className="hidden lg:block w-[30%] 2xl:w-[40%] absolute left-0 right-0 mx-auto bottom-[26.5%] 3xl:bottom-[26.5%]" alt="Facebook" width="1920" height="1000"/>
                 <motion.div 
                   className="text-center py-8 w-[85%] lg:w-[70%] xl:w-[60%] mx-auto"
                   variants={variants}
