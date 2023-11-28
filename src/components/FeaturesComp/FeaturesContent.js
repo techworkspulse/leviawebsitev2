@@ -49,7 +49,7 @@ const FeaturesContent = () => {
                     whileInView="show"
                 >
                     <motion.div 
-                        className="group h-[400px] w-[400px] sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
+                        className="group h-[400px] w-[400px] sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] [perspective:1000px]"
                         variants={paragraf}
                     >
                     <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -81,7 +81,7 @@ const FeaturesContent = () => {
                     </div>
                     </motion.div>
                     <motion.div 
-                        className="group h-[400px] w-[400px]  sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
+                        className="group h-[400px] w-[400px]  sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] [perspective:1000px]"
                         variants={paragraf}
                     >
                     <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -112,7 +112,7 @@ const FeaturesContent = () => {
                     </div>
                     </motion.div>
                     <motion.div 
-                        className="group h-[400px] w-[400px]  sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
+                        className="group h-[400px] w-[400px]  sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] [perspective:1000px]"
                         variants={paragraf}
                     >
                     <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -143,7 +143,7 @@ const FeaturesContent = () => {
                     </div>
                     </motion.div>
                     <motion.div 
-                        className="group h-[400px] w-[400px]  sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
+                        className="group h-[400px] w-[400px]  sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] [perspective:1000px]"
                         variants={paragraf}
                     >
                     <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -173,7 +173,7 @@ const FeaturesContent = () => {
                         </div>
                     </div>
                     </motion.div>
-                    <Image src="/img/features/star-middle-01.png" width="1229" height="464" alt="Star middle" className="absolute top-[41.1%] left-[27.1%] sm:top-[35.9%] sm:left-[17.8%] xl:top-[41%] xl:left-[25%] cxl:left-[27.1%] 3xl:top-[39%] 3xl:left-[23.8%] w-[545px] h-auto" />
+                    <Image src="/img/features/star-middle-01.png" width="1229" height="464" alt="Star middle" className="absolute top-[41.1%] left-[27.1%] sm:top-[35.9%] sm:left-[17.8%] xl:top-[41%] xl:left-[25%] cxl:left-[27.1%] 3xl:top-[41%] 3xl:left-[32.8%] w-[545px] h-auto" />
                 </motion.div>
                 <div className="w-full lg:w-[80%] xl:w-[70%] md:gap-4 flex lg:hidden flex-wrap justify-center sm:justify-between m-auto">
                     <FeaturesCardMobile
