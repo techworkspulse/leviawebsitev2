@@ -259,14 +259,14 @@ const LocationContent = () => {
     return(
         <>
         <section id="location" className="relative pt-0">
-            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto top-[48%] z-[2]" alt="Facebook" width="500" height="500"/>
-            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto bottom-[-23%] z-[2]" alt="Facebook" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto top-[49.4%] z-[2]" alt="big star right" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto bottom-[-14.7%] z-[2]" alt="big star left" width="500" height="500"/>
             <HeroImageSlider
                 img1={"/img/location/hero1.png"}
                 img2={"/img/location/hero2.png"}
                 img3={"/img/location/hero3.png"}
             />
-            <Image src="/img/star-line-full.svg" className="hidden lg:block w-[30%] 2xl:w-[40%] absolute left-0 right-0 mx-auto sm:bottom-[33.5%] lg:bottom-[32.5%]" alt="Facebook" width="1920" height="1000"/>
+            <Image src="/img/star-line-full.svg" className="hidden lg:block w-[30%] 2xl:w-[40%] absolute left-0 right-0 mx-auto sm:bottom-[33.5%] lg:bottom-[33.5%]" alt="Star Horizontal" width="1920" height="1000"/>
             <motion.div 
                 className="text-center py-8 w-[85%] lg:w-[70%] xl:w-[60%] mx-auto"
                 variants={variants}
@@ -295,7 +295,7 @@ const LocationContent = () => {
                 <div className="relative w-full md:w-[48%] xl:w-[48%]">
                 <Image src="/img/location/location-map.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
                 </div>
-                <div className="relative w-full md:w-[48%] xl:w-[48%] hidden lg:block">
+                <div className="relative w-full md:w-[48%] xl:w-[48%] hidden lg:block sm:pt-10">
                 <div className="w-[80%] 3xl:w-[70%] mx-auto">
                     <h5 className="font-GothamBook uppercase text-[#858b8c] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[20px] 3xl:text-[25px]">The</h5>
                     <h3 className="font-ButlerBold uppercase leading-none text-[#bda37f] tracking-[3px] sm:tracking-[5px] text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]">Geography</h3>

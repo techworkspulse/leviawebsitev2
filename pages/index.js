@@ -113,7 +113,7 @@ export default function Home() {
               ref={ref}
               initial={{ scale: 1, x: 0 }} 
               animate={controls}
-              className="absolute top-[-80%]"
+              className="absolute top-[-100%]"
             >
               <Image
                 src="/img/home/star.png"
@@ -133,15 +133,15 @@ export default function Home() {
         whileInView="show"
         id="concept"
       >
-        <div className="w-[90%] sm:w-[85%] xl:w-[60%] mx-auto flex flex-col sm:flex-row items-center">
-          <div className="w-full sm:w-1/2">
+        <div className="w-[90%] sm:w-[85%] mx-auto flex flex-col sm:flex-row items-center gap-5">
+          <div className="w-full sm:w-[60%]">
             <motion.div
               variants={paragraf}
               className="flex justify-center sm:justify-end mb-8 sm:mb-14"
             >
               <Image
                 src="/img/levia-logo.svg"
-                className="w-[50%] ml-0"
+                className="w-[50%] sm:w-[35%] ml-0"
                 alt="Facebook"
                 width={800}
                 height={1000}
@@ -154,16 +154,16 @@ export default function Home() {
             </motion.div>
             <motion.div variants={paragraf}>
               <p className="font-GothamBook text-center sm:text-right text-white leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px]">
-                This name emphasizes the highly accessible nature of the development, especially with<br></br>
+                This name emphasizes the highly accessible nature of the development, especially with
                 surrounding lifestyle amenities and opportunities, inviting people to start a life journey that is easier, enjoyable, and exciting.
               </p>
             </motion.div>
           </div>
-          <div className="w-full sm:w-1/2">
+          <div className="w-full sm:w-[40%]">
             <motion.div variants={paragraf}>
               <Image
                 src="/img/rsz_levia_building_sketch_kurttry.png"
-                className="w-full mx-auto"
+                className="w-full sm:w-[300px] ml-0 mx-auto"
                 alt="Building"
                 width={1920}
                 height={1000}
@@ -182,7 +182,7 @@ export default function Home() {
           playsInline
           className="w-full h-auto object-cover object-top"
         >
-          <source src="/img/Location-Map-Levia_2.mp4" type="video/mp4" />
+          <source src="/img/Location-Map-Levia_3.mp4" type="video/mp4" />
         </video>
       </div>
       
