@@ -94,11 +94,11 @@ const Tab = () => {
                     <div className="justify-between col-span-1 w-full md:w-[38%]">
                         <Image src="/img/floorplan/LeviaTypeCLayout-02.png" className="w-full" alt="Facebook" width="1000" height="1000"/>
                         <div>
-                        <a className="border-solid border-2 border-[#bda37f] flex justify-center w-fit py-2 px-7 mx-auto text-[#bda37f] hover:bg-[#bda37f] hover:text-white mt-10">
+                        {/* <a className="border-solid border-2 border-[#bda37f] flex justify-center w-fit py-2 px-7 mx-auto text-[#bda37f] hover:bg-[#bda37f] hover:text-white mt-10">
                             <div className="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[20px] 3xl:text-[23px] hover:cursor-pointer">
                                 VR 360°
                             </div>
-                        </a>
+                        </a> */}
                         </div>
                     </div>
                     <div className="justify-between col-span-1 w-full lg:w-[60%] xl:w-[50%]">
