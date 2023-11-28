@@ -259,14 +259,14 @@ const LocationContent = () => {
     return(
         <>
         <section id="location" className="relative pt-0">
-            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto top-[49.4%] z-[2]" alt="big star right" width="500" height="500"/>
-            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto bottom-[-14.7%] z-[2]" alt="big star left" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto lg:top-[53.4%] xl:top-[50.5%] cxl:top-[49.5%] z-[2]" alt="big star right" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto lg:bottom-[-10%] xl:bottom-[-12.8%] z-[2]" alt="big star left" width="500" height="500"/>
             <HeroImageSlider
                 img1={"/img/location/hero1.png"}
                 img2={"/img/location/hero2.png"}
                 img3={"/img/location/hero3.png"}
             />
-            <Image src="/img/star-line-full.svg" className="hidden lg:block w-[30%] 2xl:w-[40%] absolute left-0 right-0 mx-auto sm:bottom-[33.5%] lg:bottom-[33.5%]" alt="Star Horizontal" width="1920" height="1000"/>
+            <Image src="/img/star-line-full.svg" className="hidden lg:block w-[30%] 2xl:w-[40%] absolute left-0 right-0 mx-auto sm:bottom-[33.5%] lg:bottom-[34.5%]" alt="Star Horizontal" width="1920" height="1000"/>
             <motion.div 
                 className="text-center py-8 w-[85%] lg:w-[70%] xl:w-[60%] mx-auto"
                 variants={variants}

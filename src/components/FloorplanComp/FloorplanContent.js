@@ -44,7 +44,7 @@ const FloorplanContent = () => {
                         className="font-GothamBook text-white mt-10 mb-0 sm:mb-10 leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]"
                         variants={paragraf}
                     >
-                        LEVIA’s residences offer versatile living arrangements that cater to a range of lifestyles.
+                        LEVIA’s Residence offer versatile living arrangements that cater to a range of lifestyles.
                         For multi-generational families seeking privacy or residents looking to generate rental income,
                         our homes feature a convenient dual-key ready system.
                     </motion.p>

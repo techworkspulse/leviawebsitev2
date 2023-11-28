@@ -54,8 +54,8 @@ const FacContent = () => {
     return (
         <>
           <section id="facilities" className="relative py-0">
-            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto bottom-[-21.7%] z-[2]" alt="Big star left" width="500" height="500"/>
-            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto bottom-[-21.7%] z-[2]" alt="Big star right" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto lg:bottom-[-15.5%] xl:bottom-[-19.7%] cxl:bottom-[-21.7%] z-[2]" alt="Big star left" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto lg:bottom-[-15.5%] xl:bottom-[-19.7%] cxl:bottom-[-21.7%] z-[2]" alt="Big star right" width="500" height="500"/>
             <HeroImageSlider
                 img1={"/img/facilities/hero1.png"}
                 img2={"/img/facilities/hero2.png"}
@@ -83,11 +83,20 @@ const FacContent = () => {
                     </motion.p>
                     <motion.a 
                       onClick={() => setOpen(true)} 
-                      className="border-solid border-2 border-[#bda37f] flex justify-center mx-auto lg:mx-0 w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white"
+                      className="border-solid border-2 border-[#bda37f] flex justify-center mx-auto lg:mx-0 w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white mb-3 cursor-pointer"
                       variants={paragraf}
                     >
                         <div className="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px]">
                             Facilities Plan
+                        </div>
+                    </motion.a>
+                    <motion.a 
+                      onClick={() => setOpen(true)} 
+                      className="border-solid border-2 border-[#bda37f] flex justify-center mx-auto lg:mx-0 w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white cursor-pointer"
+                      variants={paragraf}
+                    >
+                        <div className="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px]">
+                            VR 360
                         </div>
                     </motion.a>
                     <Lightbox
@@ -102,8 +111,8 @@ const FacContent = () => {
           </section>
 
           <section className="py-0 relative bg-[url('/img/white-bg.png')] bg-cover bg-no-repeat">
-            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto bottom-[-0%] z-[2]" alt="Facebook" width="500" height="500"/>
-            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto bottom-[-0%] z-[2]" alt="Facebook" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto bottom-[-0%] lg:bottom-[-34%] z-[2]" alt="Facebook" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto bottom-[-0%] lg:bottom-[-34%] z-[2]" alt="Facebook" width="500" height="500"/>
             <div className="w-full md:gap-0 flex flex-wrap justify-between items-center">
                 <div className="hidden lg:block relative w-full md:w-[60%] xl:w-[60%] fac-image">
                   <Image src="/img/facilities/facilities-img.png" className="w-full rounded-tr-[58px]" alt="Facility" width={1000} height={1000}/>
