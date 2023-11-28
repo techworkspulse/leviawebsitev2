@@ -35,7 +35,7 @@ const FeaturesContent = () => {
     return(
         <>
             <section id="features" className="relative py-0">
-                <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto bottom-[14.7%] 3xl:bottom-[19.5%] z-[2]" alt="Facebook" width="500" height="500"/>
+                <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto lg:bottom-[19.1%] xl:bottom-[16%] cxl:bottom-[14.7%] 3xl:bottom-[19.5%] z-[2]" alt="Feature star" width="500" height="500"/>
                 <HeroSlider />
             </section>
 
@@ -49,7 +49,7 @@ const FeaturesContent = () => {
                     whileInView="show"
                 >
                     <motion.div 
-                        className="group h-[400px] w-[400px] sm:w-[550px] sm:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
+                        className="group h-[400px] w-[400px] sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
                         variants={paragraf}
                     >
                     <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -59,10 +59,10 @@ const FeaturesContent = () => {
                         <div className="absolute flex w-full bottom-[10%] left-[5%] right-0 items-center justify-start">
                             <Image src="/img/features/usp1-back-icon.svg" className="h-[50px] w-[50px]" alt="Facebook" width="200" height="200" />
                             <div className="ml-5">
-                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Low-Density</h5>
-                                <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">778 Units On 4.71-Acres Land</p>
+                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[2px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Low-Density</h5>
+                                <p className="font-Gotham-Medium text-white tracking-[2px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">778 Units On 4.71-Acres Land</p>
                             </div>
-                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-115%] w-1/2" />
+                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] sm:bottom-[-70%] xl:bottom-[-100%] bottom-[-115%] w-1/2" />
                         </div>
                         </div>
                         {/* Front  */}
@@ -71,17 +71,17 @@ const FeaturesContent = () => {
                         <div className="absolute flex w-full bottom-[10%] left-[5%] right-0 items-center justify-start">
                             <Image src="/img/features/usp1-icon.svg" className="h-[50px] w-[50px]" alt="Facebook" width="200" height="200" />
                             <div className="ml-5">
-                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Strategically</h5>
-                                <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Located in south KL</p>
+                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[2px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Strategically</h5>
+                                <p className="font-Gotham-Medium text-white tracking-[2px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Located in south KL</p>
                             </div>
-                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-115%] w-1/2" />
+                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] sm:bottom-[-70%] xl:bottom-[-100%] bottom-[-115%] w-1/2" />
                         </div>
                         </div>
                         
                     </div>
                     </motion.div>
                     <motion.div 
-                        className="group h-[400px] w-[400px] sm:w-[550px] sm:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
+                        className="group h-[400px] w-[400px]  sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
                         variants={paragraf}
                     >
                     <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -91,10 +91,10 @@ const FeaturesContent = () => {
                         <div className="absolute flex w-full bottom-[10%] left-[5%] right-0 items-center justify-start">
                             <Image src="/img/features/usp2-back-icon.svg" className="h-[50px] w-[50px]" alt="Facebook" width="200" height="200" />
                             <div className="ml-5">
-                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Green-Re</h5>
-                                <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Green-Re</p>
+                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[2px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Green-Re</h5>
+                                <p className="font-Gotham-Medium text-white tracking-[2px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Green-Re</p>
                             </div>
-                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-115%] w-1/2" />
+                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] sm:bottom-[-70%] xl:bottom-[-100%] bottom-[-115%] w-1/2" />
                         </div>
                         </div>
                         {/* Front  */}
@@ -103,16 +103,16 @@ const FeaturesContent = () => {
                         <div className="absolute flex w-full bottom-[10%] left-[5%] right-0 items-center justify-start">
                             <Image src="/img/features/usp2-icon.svg" className="h-[50px] w-[50px]" alt="Facebook" width="200" height="200" />
                             <div className="ml-5">
-                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Comprehensive</h5>
-                                <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Lifestyle Facilities</p>
+                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[2px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Comprehensive</h5>
+                                <p className="font-Gotham-Medium text-white tracking-[2px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Lifestyle Facilities</p>
                             </div>
-                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-115%] w-1/2" />
+                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] sm:bottom-[-70%] xl:bottom-[-100%] bottom-[-115%] w-1/2" />
                         </div>
                         </div>
                     </div>
                     </motion.div>
                     <motion.div 
-                        className="group h-[400px] w-[400px] sm:w-[550px] sm:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
+                        className="group h-[400px] w-[400px]  sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
                         variants={paragraf}
                     >
                     <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -122,10 +122,10 @@ const FeaturesContent = () => {
                         <div className="absolute flex w-full bottom-[10%] left-[5%] right-0 items-center justify-start">
                             <Image src="/img/features/usp3-back-icon.svg" className="h-[50px] w-[50px]" alt="Facebook" width="200" height="200" />
                             <div className="ml-5">
-                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Residential</h5>
-                                <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Title</p>
+                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[2px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Residential</h5>
+                                <p className="font-Gotham-Medium text-white tracking-[2px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Title</p>
                             </div>
-                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-115%] w-1/2" />
+                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] sm:bottom-[-70%] xl:bottom-[-100%] bottom-[-115%] w-1/2" />
                         </div>
                         </div>
                         {/* Front  */}
@@ -134,16 +134,16 @@ const FeaturesContent = () => {
                         <div className="absolute flex w-full bottom-[10%] left-[5%] right-0 items-center justify-start">
                             <Image src="/img/features/usp3-icon.svg" className="h-[50px] w-[50px]" alt="Facebook" width="200" height="200" />
                             <div className="ml-5">
-                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Good Connectivity</h5>
-                                <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">& Accessibility to Major Highways</p>
+                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[2px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Good Connectivity</h5>
+                                <p className="font-Gotham-Medium text-white tracking-[2px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">& Accessibility to Major Highways</p>
                             </div>
-                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-115%] w-1/2" />
+                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] sm:bottom-[-70%] xl:bottom-[-100%] bottom-[-115%] w-1/2" />
                         </div>
                         </div>
                     </div>
                     </motion.div>
                     <motion.div 
-                        className="group h-[400px] w-[400px] sm:w-[550px] sm:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
+                        className="group h-[400px] w-[400px]  sm:w-[350px] sm:h-[350px] xl:w-[550px] xl:h-[550px] 3xl:h-[450px] 3xl:w-[450px] [perspective:1000px]"
                         variants={paragraf}
                     >
                     <div className="relative h-full w-full rounded-xs shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -153,10 +153,10 @@ const FeaturesContent = () => {
                         <div className="absolute flex w-full bottom-[10%] left-[5%] right-0 items-center justify-start">
                             <Image src="/img/features/usp4-back-icon.svg" className="h-[50px] w-[50px]" alt="Facebook" width="200" height="200" />
                             <div className="ml-5">
-                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">North & South</h5>
-                                <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Orientation</p>
+                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[2px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">North & South</h5>
+                                <p className="font-Gotham-Medium text-white tracking-[2px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">Orientation</p>
                             </div>
-                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-115%] w-1/2" />
+                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] sm:bottom-[-70%] xl:bottom-[-100%] bottom-[-115%] w-1/2" />
                         </div>
                         </div>
                         {/* Front  */}
@@ -165,15 +165,15 @@ const FeaturesContent = () => {
                         <div className="absolute flex w-full bottom-[10%] left-[5%] right-0 items-center justify-start">
                             <Image src="/img/features/usp4-icon.svg" className="h-[50px] w-[50px]" alt="Facebook" width="200" height="200" />
                             <div className="ml-5">
-                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Up to</h5>
-                                <p className="font-Gotham-Medium text-white tracking-[3px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">4 Car Parks</p>
+                                <h5 className="font-ButlerBold text-[#7ea5a2] tracking-[2px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase">Up to</h5>
+                                <p className="font-Gotham-Medium text-white tracking-[2px] uppercase text-[17px] md:text-[15px] xl:text-[15px] 2xl:text-[17px] 3xl:text-[20px]">4 Car Parks</p>
                             </div>
-                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] bottom-[-115%] w-1/2" />
+                            <Image src="/img/features/star-cards-01.png" width="463" height="120" alt="star bottom" className="absolute left-[-7%] sm:bottom-[-70%] xl:bottom-[-100%] bottom-[-115%] w-1/2" />
                         </div>
                         </div>
                     </div>
                     </motion.div>
-                    <Image src="/img/features/star-middle-01.png" width="1229" height="464" alt="Star middle" className="absolute top-[41.1%] left-[27.1%] 3xl:top-[39%] 3xl:left-[23.8%] w-[545px] h-auto" />
+                    <Image src="/img/features/star-middle-01.png" width="1229" height="464" alt="Star middle" className="absolute top-[41.1%] left-[27.1%] sm:top-[35.9%] sm:left-[17.8%] xl:top-[41%] xl:left-[25%] cxl:left-[27.1%] 3xl:top-[39%] 3xl:left-[23.8%] w-[545px] h-auto" />
                 </motion.div>
                 <div className="w-full lg:w-[80%] xl:w-[70%] md:gap-4 flex lg:hidden flex-wrap justify-center sm:justify-between m-auto">
                     <FeaturesCardMobile

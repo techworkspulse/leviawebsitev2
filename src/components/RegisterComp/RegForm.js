@@ -70,7 +70,7 @@ const RegForm = () => {
                             className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                             />
                         </div>
-                        <input type="text" name="name" id="name" class="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="John Doe"/>
+                        <input type="text" name="name" id="name" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="John Doe"/>
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -80,7 +80,7 @@ const RegForm = () => {
                             className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                         />
                         </div>
-                        <input type="email" name="email" id="email" class="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="example@email.com"/>
+                        <input type="email" name="email" id="email" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="example@email.com"/>
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -90,7 +90,7 @@ const RegForm = () => {
                                 className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                             />
                         </div>
-                        <input type="text" name="phone" id="phone" class="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="0123456789"/>
+                        <input type="text" name="phone" id="phone" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="0123456789"/>
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -100,7 +100,7 @@ const RegForm = () => {
                                 className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                             />
                         </div>
-                         <input type="text" name="age" id="age" class="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="25"/>
+                         <input type="text" name="age" id="age" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="25"/>
                     </div>
                 </div>
                 <div>
