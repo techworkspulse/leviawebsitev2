@@ -54,8 +54,8 @@ const FacContent = () => {
     return (
         <>
           <section id="facilities" className="relative py-0">
-            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto lg:bottom-[-15.5%] xl:bottom-[-19.7%] cxl:bottom-[-21.7%] z-[2]" alt="Big star left" width="500" height="500"/>
-            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto lg:bottom-[-15.5%] xl:bottom-[-19.7%] cxl:bottom-[-21.7%] z-[2]" alt="Big star right" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto lg:bottom-[-15.5%] xl:bottom-[-19.7%] cxl:bottom-[-21.7%] 3xl:bottom-[-28.9%] z-[2]" alt="Big star left" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto lg:bottom-[-15.5%] xl:bottom-[-19.7%] cxl:bottom-[-21.7%] 3xl:bottom-[-28.9%] z-[2]" alt="Big star right" width="500" height="500"/>
             <HeroImageSlider
                 img1={"/img/facilities/hero1.png"}
                 img2={"/img/facilities/hero2.png"}

@@ -259,8 +259,8 @@ const LocationContent = () => {
     return(
         <>
         <section id="location" className="relative pt-0">
-            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto lg:top-[53.4%] xl:top-[50.5%] cxl:top-[49.5%] z-[2]" alt="big star right" width="500" height="500"/>
-            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto lg:bottom-[-10%] xl:bottom-[-12.8%] z-[2]" alt="big star left" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute right-[-12%] mx-auto lg:top-[53.4%] xl:top-[50.5%] cxl:top-[49.5%] 3xl:top-[43.3%] z-[2]" alt="big star right" width="500" height="500"/>
+            <Image src="/img/big-star.svg" className="w-[20%] absolute left-[-12%] mx-auto lg:bottom-[-10%] xl:bottom-[-12.8%] 3xl:bottom-[-18%] z-[2]" alt="big star left" width="500" height="500"/>
             <HeroImageSlider
                 img1={"/img/location/hero1.png"}
                 img2={"/img/location/hero2.png"}
