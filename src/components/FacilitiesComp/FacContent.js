@@ -96,7 +96,7 @@ const FacContent = () => {
                       variants={paragraf}
                     >
                         <div className="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px]">
-                            VR 360
+                            VR 360&#176;
                         </div>
                     </motion.a>
                     <Lightbox
