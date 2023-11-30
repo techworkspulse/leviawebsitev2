@@ -6,7 +6,7 @@ const Footer = () => {
                     <div>
                         <a className="font-GothamBook text-white leading-loose  border border-r border-l-0 border-t-0 border-b-0 border-white pr-3 text-[10px] 3xl:text-[14px]">Disclaimer</a>
                         <a className="font-GothamBook text-white leading-loose  border border-r border-l-0 border-t-0 border-b-0 border-white px-3 text-[10px] 3xl:text-[14px]">Terms and Conditions</a>
-                        <a className="font-GothamBook text-white leading-loose  border border-r border-l-0 border-t-0 border-b-0 border-white px-3 text-[10px] 3xl:text-[14px]">PDPA</a>
+                        <a className="font-GothamBook text-white leading-loose  border border-r border-l-0 border-t-0 border-b-0 border-white px-3 text-[10px] 3xl:text-[14px]" href="https://www.mchb.com.my/privacy-notice/" target="_blank">PDPA</a>
                         <a className="font-GothamBook text-white leading-loose text-[10px] 3xl:text-[14px] pl-3">APDL</a>
                     </div>
                     <div>
