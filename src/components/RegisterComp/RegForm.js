@@ -1,5 +1,5 @@
 import { Button,  Label} from "flowbite-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const RegForm = () => {
     const [selectedOption, setSelectedOption] = useState("");
 
@@ -58,9 +58,103 @@ const RegForm = () => {
             },
         ]
     }
+
+    const [contactName, setcontactName] = useState('');
+    const [contactEmail, setcontactEmail] = useState('');
+    const [contactPhone, setcontactPhone] = useState('');
+    const [contactAge, setcontactAge] = useState('');
+    const [sourceType, setSourceType] = useState('');
+    const [filtered, setFiltered] = useState({});
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+      
+        const errors = validate();
+      
+        if (errors) {
+          setNameerror(errors.contactName);
+          setPhoneerror(errors.contactEmail);
+          setEmailerror(errors.contactPhone);
+          setMessageerror(errors.contactMessage);
+        } else {
+          setShowProgressBar(true);
+      
+          let payload = {
+            name: contactName,
+            email: contactEmail,
+            phone: contactPhone,
+            age: contactAge, 
+            interested_residential: selectedOption,
+            hear_about_us: selectedOption2,
+            utm_sources: Object.keys(filtered).length ? JSON.stringify(filtered) : null,
+          };
+      
+          var MHub = {
+            form_id: 'eb7eb708-618e-4654-89e2-cc8de6eddd47',
+            form_url: 'https://leviaresidences.com/',
+            form_name: 'Levia Residence',
+            name: contactName,
+            email: contactEmail,
+            mobile: contactPhone,
+          };
+      
+          const response = await fetch(`https://api.lead.mhub.my/submissions`, {
+            method: 'POST',
+            body: MHub,
+            headers: {
+              'x-api-key': '07T8VmdpLm3X0tgl181FW9TNHpeym7kgalx3sXBp',
+            },
+          })
+            .then((response) => {
+              // HTTP 301 response
+              console.log(response);
+            })
+            .catch(function (err) {
+              console.log(err);
+            });
+      
+          const response2 = await fetch(`https://xog73sh1b2.execute-api.ap-southeast-1.amazonaws.com/prod/levia/contacts`, {
+            method: 'POST',
+            body: JSON.stringify(payload),
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          })
+            .then((response2) => {
+              // HTTP 301 response
+              const data = response2.json();
+              console.log(data);
+              setShowProgressBar(false);
+              router.push('/thankyou');
+            })
+            .catch(function (err) {
+              setShowProgressBar(false);
+              setshowError(true);
+              console.log(err);
+            });
+        }
+      };
+
+      useEffect(() => {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+        const sourceTypeFromURL = params['s'];
+    
+        setSourceType(sourceTypeFromURL);
+    
+        const filteredParams = Object.keys(params)
+          .filter((key) => key.startsWith('utm_'))
+          .reduce((obj, key) => {
+            obj[key] = params[key];
+            return obj;
+          }, {});
+    
+        setFiltered(filteredParams);
+      }, []);
     return(
         <div className="w-full mt-14">
-            <form>
+            <form onSubmit={handleSubmit} >
+                <input type="hidden" name="source_param" id="source_param" value="Levia Residence Registration" /> 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pb-5">
                     <div className="flex items-center">
                         <div className="block mr-2"> {/* Adjust the width as needed */}
@@ -70,7 +164,17 @@ const RegForm = () => {
                             className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                             />
                         </div>
-                        <input type="text" name="name" id="name" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="John Doe"/>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            id="name" 
+                            className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" 
+                            placeholder="John Doe"
+                            onChange={({ target }) => {
+                                setcontactName(target?.value);
+                            }}
+                            value={contactName}
+                        />
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -80,7 +184,19 @@ const RegForm = () => {
                             className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                         />
                         </div>
-                        <input type="email" name="email" id="email" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="example@email.com"/>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" 
+                            placeholder="example@email.com"
+                            onChange={({ target }) => {
+                                setcontactEmail(target?.value);
+                            }}
+                            value={contactEmail}
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            required
+                        />
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -90,7 +206,17 @@ const RegForm = () => {
                                 className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                             />
                         </div>
-                        <input type="text" name="phone" id="phone" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="0123456789"/>
+                        <input 
+                            type="text" 
+                            name="phone" 
+                            id="phone" 
+                            className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" 
+                            placeholder="0123456789"
+                            onChange={({ target }) => {
+                                setcontactPhone(target?.value);
+                            }}
+                            value={contactPhone}
+                        />
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -100,7 +226,17 @@ const RegForm = () => {
                                 className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                             />
                         </div>
-                         <input type="text" name="age" id="age" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="25"/>
+                         <input 
+                            type="text" 
+                            name="age" 
+                            id="age" 
+                            className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]"
+                            placeholder="25"
+                            onChange={({ target }) => {
+                                setcontactAge(target?.value);
+                            }}
+                            value={contactAge}
+                        />
                     </div>
                 </div>
                 <div>
@@ -141,7 +277,12 @@ const RegForm = () => {
                     </div>
                 </div>
                 <div className="flex items-start gap-2">
-                    <input className="mr-2 mt-2 hover:cursor-pointer" type="checkbox" value="tnc"/>
+                    <input 
+                        className="mr-2 mt-2 hover:cursor-pointer" 
+                        type="checkbox" 
+                        value="tnc"
+                        checked
+                    />
                     <Label htmlFor="tnc" className="leading-none font-Avgardn text-black tracking-[1px] text-[10px]">
                     I hereby agree and expressly give my consent to Matrix Concepts Holdings Berhad and its group of companies and/or its authorised entity (collectively referred to as “Matrix”) to
                     collect, store, process and/or access my personal data as far as to enable Matrix to keep me informed of any updates/information with regard to Matrix’s event including but not

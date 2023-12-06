@@ -82,10 +82,24 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | Levia Residence</title>
-        <meta name="description" content="Home | Levia Residence" />
+        <title>Levia Residence | Matrix Concepts</title>
+        <meta name="description" content="Levia Residence | Matrix Concepts" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Levia Residence | Matrix Concepts" />
+        <meta property="og:image" content="/img/share.png" /> 
+        <meta property="og:image:width" content="500" /> 
+        <meta property="og:image:height" content="500" /> 
+        <meta property="og:description" content="In the vibrant suburban area of Cheras, where you are leisurely connected to the best of both worlds" />  
+        <meta property="og:url" content="https://leviaresidence.com/" /> 
+        <meta property="og:image:url" content="/img/share.png" />
+
+        <meta name="title" content="Levia Residence | Matrix Concepts" />
+        <meta name="description" content="In the vibrant suburban area of Cheras, where you are leisurely connected to the best of both worlds" />
+        <meta name="keywords" content="Kuala Lumpur, Residence, Southern KL, Cheras, MRT, Matrix" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="author" content="Digital Symphony" />
+        <link rel="icon" href="/img/favicon.png" />
       </Head>
 
       {showMenu && 
