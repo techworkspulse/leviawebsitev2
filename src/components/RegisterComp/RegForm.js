@@ -1,5 +1,7 @@
 import { Button,  Label} from "flowbite-react";
 import { useEffect, useState } from "react";
+import { useRouter } from 'next/router';
+
 const RegForm = () => {
     const [selectedOption, setSelectedOption] = useState("");
 
@@ -69,6 +71,9 @@ const RegForm = () => {
     const [ageerror, setAgeerror] = useState('');
     const [sourceType, setSourceType] = useState('');
     const [filtered, setFiltered] = useState({});
+    const [showProgressBar, setShowProgressBar] = useState(false);
+    const [showError, setshowError] = useState(false);
+    const router = useRouter();
 
     const validate = () =>{
         const errors = {}
@@ -122,9 +127,10 @@ const RegForm = () => {
       
           const response = await fetch(`https://api.lead.mhub.my/submissions`, {
             method: 'POST',
-            body: MHub,
+            body: JSON.stringify(MHub),
             headers: {
-              'x-api-key': '07T8VmdpLm3X0tgl181FW9TNHpeym7kgalx3sXBp',
+                'Content-Type': 'application/json',
+                'x-api-key': '07T8VmdpLm3X0tgl181FW9TNHpeym7kgalx3sXBp',
             },
           })
             .then((response) => {
@@ -324,7 +330,7 @@ const RegForm = () => {
                     </div> 
                 </div>
                 <div className="my-5 text-center bg-[#FAEBEB] p-3" style={{ display: showError ? 'block' : 'none' }}>
-                    <p className="font-Avgardn mb-0 text-[16px] text-[#333]">Sorry, we couldn't process your request at the moment. Please refresh the page and try again.</p>
+                    <p className="font-Avgardn mb-0 text-[16px] text-[#333]">Sorry, we could not process your request at the moment. Please refresh the page and try again.</p>
                 </div>
                 <div className="flex justify-center mt-8">
                     <button className="border-solid rounded-none border-2 bg-transparent border-[#bda37f] w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white">
