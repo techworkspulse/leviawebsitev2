@@ -7,20 +7,16 @@ import { useState, useEffect, useRef } from 'react';
 import { useScroll, useTransform, useAnimation, motion, Variants } from "framer-motion"; 
 import Navmenu from '../src/components/Navmenu';
 import { useInView } from "react-intersection-observer";
-import LocationContent from "@/src/components/LocationComp/LocationContent";
-import RegContent from "@/src/components/RegisterComp/RegContent";
-import GalleryContent from "@/src/components/GalleryComp/GalleryContent";
-import FloorplanContent from "@/src/components/FloorplanComp/FloorplanContent";
-import FacContent from "@/src/components/FacilitiesComp/FacContent";
-import FeaturesContent from "@/src/components/FeaturesComp/FeaturesContent";
 import Contact from '@/src/components/ContactContent';
 import Footer from '@/src/components/Footer';
+import { useRouter } from 'next/router';
 
-export default function Home() {
+export default function Error() {
   const [ref, inView] = useInView({
     triggerOnce: false, // Keep triggering as long as it's in view
     threshold: 0, // Adjust this threshold as needed
   });
+  const router = useRouter()
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -82,10 +78,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Levia Residence | Matrix Concepts</title>
-        <meta name="description" content="Levia Residence | Matrix Concepts" />
+        <title>Error | Levia Residence</title>
+        <meta name="description" content="Error | Levia Residence" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Levia Residence | Matrix Concepts" />
+        <meta property="og:title" content="Thank You | Levia Residence" />
         <meta property="og:image" content="/img/share.png" /> 
         <meta property="og:image:width" content="500" /> 
         <meta property="og:image:height" content="500" /> 
@@ -93,7 +89,7 @@ export default function Home() {
         <meta property="og:url" content="https://leviaresidence.com/" /> 
         <meta property="og:image:url" content="/img/share.png" />
 
-        <meta name="title" content="Levia Residence | Matrix Concepts" />
+        <meta name="title" content="Error | Levia Residence" />
         <meta name="description" content="In the vibrant suburban area of Cheras, where you are leisurely connected to the best of both worlds" />
         <meta name="keywords" content="Kuala Lumpur, Residence, Southern KL, Cheras, MRT, Matrix" />
         <meta name="robots" content="index, follow" />
@@ -112,34 +108,6 @@ export default function Home() {
       </motion.div>
       }
 
-      <section
-        className="flex h-screen items-center py-0 mx-auto justify-center flex-col relative">
-          <div className="relative">
-            <motion.h1
-              initial={{ opacity: 0 }} 
-              animate={{ opacity: 1 }} 
-              transition={{ duration: 1, delay: 2 }} 
-              className="font-GothamBook uppercase text-center tracking-[3px] sm:tracking-[5px] text-[#bda37f] text-[25px] sm:text-[30px] xl:text[35px] 2xl:text-[35px] 3xl:text-[50px]"
-            >
-              An Inspired Oasis <br></br>at the City&apos;s Heart
-            </motion.h1>
-            <motion.div
-              ref={ref}
-              initial={{ scale: 1, x: 0 }} 
-              animate={controls}
-              className="absolute top-[-100%]"
-            >
-              <Image
-                src="/img/home/star.png"
-                className="w-[80%] mx-auto"
-                alt="Star"
-                width={1920}
-                height={1000}
-              />
-            </motion.div>
-          </div>
-      </section>
-
       <motion.section
         className="h-fit sm:h-screen flex items-center sm:py-0"
         variants={variants}
@@ -148,10 +116,10 @@ export default function Home() {
         id="concept"
       >
         <div className="w-[90%] sm:w-[85%] mx-auto flex flex-col sm:flex-row items-center gap-5">
-          <div className="w-full sm:w-[60%]">
+          <div className="w-full">
             <motion.div
               variants={paragraf}
-              className="flex justify-center sm:justify-end mb-8 sm:mb-14"
+              className="flex justify-center mb-8 sm:mb-14"
             >
               <Image
                 src="/img/levia-logo.svg"
@@ -161,56 +129,24 @@ export default function Home() {
                 height={1000}
               />
             </motion.div>
+            <motion.h3 
+                    variants={paragraf}
+                    className="font-ButlerBold text-[#CD9B76] text-[27px] sm:text-[32px] 2xl:text-[37px] 3xl:text-[52px] mb-5 uppercase text-center"
+                  >
+                      Error
+                  </motion.h3>
             <motion.div variants={paragraf}>
-              <p className="font-GothamBook text-center sm:text-right text-white leading-normal mb-10 lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px]">
-                LEVIA comes from a combination<br></br> of the words Leisure and Via, the latter meaning by way of.
+              <p className="font-GothamBook text-center text-white leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] w-[50%] mx-auto mb-5">
+              Page Not Found
               </p>
             </motion.div>
-            <motion.div variants={paragraf}>
-              <p className="font-GothamBook text-center sm:text-right text-white leading-normal lg:leading-loose text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px]">
-                This name emphasizes the highly accessible nature of the development, especially with
-                surrounding lifestyle amenities and opportunities, inviting people to start a life journey that is easier, enjoyable, and exciting.
-              </p>
-            </motion.div>
-          </div>
-          <div className="w-full sm:w-[40%]">
-            <motion.div variants={paragraf}>
-              <Image
-                src="/img/rsz_levia_building_sketch_kurttry.png"
-                className="w-full sm:w-[300px] ml-0 mx-auto"
-                alt="Building"
-                width={1920}
-                height={1000}
-              />
-            </motion.div>
+            <div>
+              <button onClick={() => router.back()} className="flex items-center justify-center w-[150px] mx-auto uppercase py-3 px-5 text-white  bg-[#CD9B76] leading-none">
+                Back</button>
+            </div>
           </div>
         </div>
       </motion.section>
-
-      {/* Video  */}
-      <div>
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-auto object-cover object-top"
-        >
-          <source src="/img/Location-Map-Levia_3.mp4" type="video/mp4" />
-        </video>
-      </div>
-      
-      <FeaturesContent />
-
-      <FacContent />
-
-      <FloorplanContent />
-
-      <GalleryContent />
-
-      <LocationContent />
-
-      <RegContent />
 
       <Contact />
       

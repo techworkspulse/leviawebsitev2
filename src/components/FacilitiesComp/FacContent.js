@@ -90,7 +90,7 @@ const FacContent = () => {
                             Facilities Plan
                         </div>
                     </motion.a>
-                    <motion.a 
+                    {/* <motion.a 
                       onClick={() => setOpen(true)} 
                       className="border-solid border-2 border-[#bda37f] flex justify-center mx-auto lg:mx-0 w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white cursor-pointer"
                       variants={paragraf}
@@ -98,7 +98,7 @@ const FacContent = () => {
                         <div className="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px]">
                             VR 360&#176;
                         </div>
-                    </motion.a>
+                    </motion.a> */}
                     <Lightbox
                       open={open}
                       close={() => setOpen(false)}

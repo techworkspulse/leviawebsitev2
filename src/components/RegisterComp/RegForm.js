@@ -1,5 +1,7 @@
 import { Button,  Label} from "flowbite-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from 'next/router';
+
 const RegForm = () => {
     const [selectedOption, setSelectedOption] = useState("");
 
@@ -58,9 +60,129 @@ const RegForm = () => {
             },
         ]
     }
+
+    const [contactName, setcontactName] = useState('');
+    const [contactEmail, setcontactEmail] = useState('');
+    const [contactPhone, setcontactPhone] = useState('');
+    const [contactAge, setcontactAge] = useState('');
+    const [nameerror, setNameerror] = useState('');
+    const [emailerror, setEmailerror] = useState('');
+    const [phoneerror, setPhoneerror] = useState('');
+    const [ageerror, setAgeerror] = useState('');
+    const [sourceType, setSourceType] = useState('');
+    const [filtered, setFiltered] = useState({});
+    const [showProgressBar, setShowProgressBar] = useState(false);
+    const [showError, setshowError] = useState(false);
+    const router = useRouter();
+
+    const validate = () =>{
+        const errors = {}
+        if (contactName === "") 
+        errors.contactName = "Name is Required"
+
+        if (contactEmail === "") 
+        errors.contactEmail = "Email is Required"
+
+        if (contactPhone === "") 
+        errors.contactPhone = "Phone is Required"
+
+        if (contactAge === "") 
+        errors.contactAge = "Message is Required"
+
+        return Object.keys(errors).length===0? null:errors;
+
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+      
+        const errors = validate();
+      
+        if (errors) {
+          setNameerror(errors.contactName);
+          setPhoneerror(errors.contactEmail);
+          setEmailerror(errors.contactPhone);
+          setAgeerror(errors.contactAge);
+        } else {
+          setShowProgressBar(true);
+      
+          let payload = {
+            name: contactName,
+            email: contactEmail,
+            phone: contactPhone,
+            age: contactAge, 
+            interested_residential: selectedOption,
+            hear_about_us: selectedOption2,
+            utm_sources: Object.keys(filtered).length ? JSON.stringify(filtered) : null,
+          };
+      
+          var MHub = {
+            form_id: 'eb7eb708-618e-4654-89e2-cc8de6eddd47',
+            form_url: 'https://leviaresidences.com/',
+            form_name: 'Levia Residence',
+            name: contactName,
+            email: contactEmail,
+            mobile: contactPhone,
+          };
+      
+          const response = await fetch(`https://api.lead.mhub.my/submissions`, {
+            method: 'POST',
+            body: JSON.stringify(MHub),
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': '07T8VmdpLm3X0tgl181FW9TNHpeym7kgalx3sXBp',
+            },
+          })
+            .then((response) => {
+              // HTTP 301 response
+              console.log(response);
+            })
+            .catch(function (err) {
+              console.log(err);
+            });
+      
+          const response2 = await fetch(`https://xog73sh1b2.execute-api.ap-southeast-1.amazonaws.com/prod/levia/contacts`, {
+            method: 'POST',
+            body: JSON.stringify(payload),
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          })
+            .then((response2) => {
+              // HTTP 301 response
+              const data = response2.json();
+              console.log(data);
+              setShowProgressBar(false);
+              router.push('/thankyou');
+            })
+            .catch(function (err) {
+              setShowProgressBar(false);
+              setshowError(true);
+              console.log(err);
+            });
+        }
+      };
+
+      useEffect(() => {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+        const sourceTypeFromURL = params['s'];
+    
+        setSourceType(sourceTypeFromURL);
+    
+        const filteredParams = Object.keys(params)
+          .filter((key) => key.startsWith('utm_'))
+          .reduce((obj, key) => {
+            obj[key] = params[key];
+            return obj;
+          }, {});
+    
+        setFiltered(filteredParams);
+      }, []);
     return(
         <div className="w-full mt-14">
-            <form>
+            <form onSubmit={handleSubmit} >
+                <input type="hidden" name="source_param" id="source_param" value="Levia Residence Registration" /> 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pb-5">
                     <div className="flex items-center">
                         <div className="block mr-2"> {/* Adjust the width as needed */}
@@ -70,7 +192,19 @@ const RegForm = () => {
                             className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                             />
                         </div>
-                        <input type="text" name="name" id="name" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="John Doe"/>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            id="name" 
+                            className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" 
+                            placeholder="John Doe"
+                            onChange={({ target }) => {
+                                setcontactName(target?.value);
+                            }}
+                            value={contactName}
+                            required
+                        />
+                        <div className="text-red-500 text-sm">{nameerror}</div>
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -80,7 +214,20 @@ const RegForm = () => {
                             className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                         />
                         </div>
-                        <input type="email" name="email" id="email" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="example@email.com"/>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" 
+                            placeholder="example@email.com"
+                            onChange={({ target }) => {
+                                setcontactEmail(target?.value);
+                            }}
+                            value={contactEmail}
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            required
+                        />
+                        <div className="text-red-500 text-sm">{emailerror}</div>
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -90,7 +237,19 @@ const RegForm = () => {
                                 className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                             />
                         </div>
-                        <input type="text" name="phone" id="phone" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="0123456789"/>
+                        <input 
+                            type="text" 
+                            name="phone" 
+                            id="phone" 
+                            className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" 
+                            placeholder="0123456789"
+                            onChange={({ target }) => {
+                                setcontactPhone(target?.value);
+                            }}
+                            value={contactPhone}
+                            required
+                        />
+                        <div className="text-red-500 text-sm">{phoneerror}</div>
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -100,7 +259,18 @@ const RegForm = () => {
                                 className="font-Avgardn text-[#bda37f] tracking-[2px] leading-loose text-[15px]"
                             />
                         </div>
-                         <input type="text" name="age" id="age" className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]" placeholder="25"/>
+                         <input 
+                            type="text" 
+                            name="age" 
+                            id="age" 
+                            className="flex-1 border-black text-black h-[40px] py-0 bg-transparent focus:bg-white focus:border-gray-50 font-Avgardn tracking-[2px] text-[15px]"
+                            placeholder="25"
+                            onChange={({ target }) => {
+                                setcontactAge(target?.value);
+                            }}
+                            value={contactAge}
+                        />
+                        <div className="text-red-500 text-sm">{ageerror}</div>
                     </div>
                 </div>
                 <div>
@@ -141,12 +311,26 @@ const RegForm = () => {
                     </div>
                 </div>
                 <div className="flex items-start gap-2">
-                    <input className="mr-2 mt-2 hover:cursor-pointer" type="checkbox" value="tnc"/>
+                    <input 
+                        className="mr-2 mt-2 hover:cursor-pointer" 
+                        type="checkbox" 
+                        value="tnc"
+                        checked
+                    />
                     <Label htmlFor="tnc" className="leading-none font-Avgardn text-black tracking-[1px] text-[10px]">
                     I hereby agree and expressly give my consent to Matrix Concepts Holdings Berhad and its group of companies and/or its authorised entity (collectively referred to as “Matrix”) to
                     collect, store, process and/or access my personal data as far as to enable Matrix to keep me informed of any updates/information with regard to Matrix’s event including but not
                     limited to any future events, products, services and/or marketing related information, provided the use of my personal data is in line with the applicable laws.
                     </Label>
+                </div>
+                <div className="hidden container-progress" style={{ display: showProgressBar ? 'block' : 'none' }}>    
+                    <div className="progress2 progress-moved">
+                        <div className="progress-bar2" >
+                        </div>                       
+                    </div> 
+                </div>
+                <div className="my-5 text-center bg-[#FAEBEB] p-3" style={{ display: showError ? 'block' : 'none' }}>
+                    <p className="font-Avgardn mb-0 text-[16px] text-[#333]">Sorry, we could not process your request at the moment. Please refresh the page and try again.</p>
                 </div>
                 <div className="flex justify-center mt-8">
                     <button className="border-solid rounded-none border-2 bg-transparent border-[#bda37f] w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white">
