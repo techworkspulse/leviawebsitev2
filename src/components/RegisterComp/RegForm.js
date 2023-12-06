@@ -63,8 +63,30 @@ const RegForm = () => {
     const [contactEmail, setcontactEmail] = useState('');
     const [contactPhone, setcontactPhone] = useState('');
     const [contactAge, setcontactAge] = useState('');
+    const [nameerror, setNameerror] = useState('');
+    const [emailerror, setEmailerror] = useState('');
+    const [phoneerror, setPhoneerror] = useState('');
+    const [ageerror, setAgeerror] = useState('');
     const [sourceType, setSourceType] = useState('');
     const [filtered, setFiltered] = useState({});
+
+    const validate = () =>{
+        const errors = {}
+        if (contactName === "") 
+        errors.contactName = "Name is Required"
+
+        if (contactEmail === "") 
+        errors.contactEmail = "Email is Required"
+
+        if (contactPhone === "") 
+        errors.contactPhone = "Phone is Required"
+
+        if (contactAge === "") 
+        errors.contactAge = "Message is Required"
+
+        return Object.keys(errors).length===0? null:errors;
+
+    }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -75,7 +97,7 @@ const RegForm = () => {
           setNameerror(errors.contactName);
           setPhoneerror(errors.contactEmail);
           setEmailerror(errors.contactPhone);
-          setMessageerror(errors.contactMessage);
+          setAgeerror(errors.contactAge);
         } else {
           setShowProgressBar(true);
       
@@ -174,7 +196,9 @@ const RegForm = () => {
                                 setcontactName(target?.value);
                             }}
                             value={contactName}
+                            required
                         />
+                        <div className="text-red-500 text-sm">{nameerror}</div>
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -197,6 +221,7 @@ const RegForm = () => {
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             required
                         />
+                        <div className="text-red-500 text-sm">{emailerror}</div>
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -216,7 +241,9 @@ const RegForm = () => {
                                 setcontactPhone(target?.value);
                             }}
                             value={contactPhone}
+                            required
                         />
+                        <div className="text-red-500 text-sm">{phoneerror}</div>
                     </div>
                     <div className="flex items-center">
                         <div className="block mr-2">
@@ -237,6 +264,7 @@ const RegForm = () => {
                             }}
                             value={contactAge}
                         />
+                        <div className="text-red-500 text-sm">{ageerror}</div>
                     </div>
                 </div>
                 <div>
@@ -288,6 +316,15 @@ const RegForm = () => {
                     collect, store, process and/or access my personal data as far as to enable Matrix to keep me informed of any updates/information with regard to Matrix’s event including but not
                     limited to any future events, products, services and/or marketing related information, provided the use of my personal data is in line with the applicable laws.
                     </Label>
+                </div>
+                <div className="hidden container-progress" style={{ display: showProgressBar ? 'block' : 'none' }}>    
+                    <div className="progress2 progress-moved">
+                        <div className="progress-bar2" >
+                        </div>                       
+                    </div> 
+                </div>
+                <div className="my-5 text-center bg-[#FAEBEB] p-3" style={{ display: showError ? 'block' : 'none' }}>
+                    <p className="font-Avgardn mb-0 text-[16px] text-[#333]">Sorry, we couldn't process your request at the moment. Please refresh the page and try again.</p>
                 </div>
                 <div className="flex justify-center mt-8">
                     <button className="border-solid rounded-none border-2 bg-transparent border-[#bda37f] w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white">
