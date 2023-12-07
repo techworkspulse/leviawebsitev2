@@ -199,6 +199,28 @@ export default function Home() {
           <source src="/img/Location-Map-Levia_3.mp4" type="video/mp4" />
         </video>
       </div>
+
+      <motion.section
+        className="h-fit sm:h-screen flex items-center sm:py-0"
+        variants={variants}
+        initial="hidden"
+        whileInView="show"
+        id="concept"
+      >
+        <div className="w-[90%] sm:w-[85%] mx-auto flex flex-col sm:flex-row items-center gap-5">
+          <div className="w-full sm:w-[80%] mx-auto">
+            <video
+            loop
+            playsInline
+            controls
+            poster="/img/leviapreview.png"
+            className="w-full h-auto object-cover object-top"
+          >
+            <source src="http://leviaresidence.com.s3-website-ap-southeast-1.amazonaws.com/Levia_teaser%20video_opt.03_FA.mp4" type="video/mp4" />
+          </video>
+          </div>
+        </div>
+      </motion.section>
       
       <FeaturesContent />
 
