@@ -216,7 +216,7 @@ export default function Home() {
             poster="/img/leviapreview.png"
             className="w-full h-auto object-cover object-top"
           >
-            <source src="http://leviaresidence.com.s3-website-ap-southeast-1.amazonaws.com/Levia_teaser%20video_opt.03_FA.mp4" type="video/mp4" />
+            <source src="https://s3.ap-southeast-1.amazonaws.com/leviaresidence.com/Levia_teaser+video_opt.03_FA.mp4" type="video/mp4" />
           </video>
           </div>
         </div>
