@@ -91,7 +91,7 @@ const FacContent = () => {
                         </div>
                     </motion.a>
                     <motion.a 
-                      href="/levia360/index.htm"
+                      href="https://s3.ap-southeast-1.amazonaws.com/leviaresidence.com/assets/levia360/index.htm"
                       target="_blank"
                       className="border-solid border-2 border-[#bda37f] flex justify-center mx-auto lg:mx-0 w-fit py-2 px-7 text-[#bda37f] hover:bg-[#bda37f] hover:text-white cursor-pointer"
                       variants={paragraf}
