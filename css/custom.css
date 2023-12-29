@@ -1,0 +1,267 @@
+:root {
+    --sm: 640px;
+    --md: 768px;
+    --lg: 1024px;
+    --xl: 1280px;
+    --xxl: 1536px;
+    --xxxl:1800px;
+}
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../assets/fonts/GothamBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Gotham-Medium';
+    src: url('../assets/fonts/Gotham-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Butler_Bold';
+    src: url('../assets/fonts/Butler_Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Baskerville';
+    src: url('../assets/fonts/Baskerville.ttc') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'AVGARDD_2';
+    src: url('../assets/fonts/AVGARDD_2.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+.font-GothamBook{font-family: 'GothamBook';}
+.font-GothamMedium{font-family: 'Gotham-Medium';}
+.font-Butler{font-family: 'Butler_Bold';}
+.font-Baskerville{font-family: 'Baskerville';}
+.font-Avgardd{font-family: 'AVGARDD_2'}
+
+html { scroll-behavior: smooth; }
+
+body{
+    background-color: #fff;
+}
+html, body{overflow-x: hidden;}
+[type='email']{
+    background-color: transparent;
+}
+.\[\&\:not\(\[data-te-collapse-collapsed\]\)\]\:text-primary:not([data-te-collapse-collapsed]){
+    color: #000 !important;
+}
+
+[type='text']{
+    background-color: transparent;
+    height: 50px;
+    color: white;
+}
+
+input, select{
+    color: white;
+    font-family: 'Poppins';
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input:focus, select:focus,
+input:focus-visible, select:focus-visible{
+    box-shadow: none !important;
+    border-color:white!important;
+    outline: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: white !important;
+    font-family: 'Poppins';
+}
+
+/* Footer  */
+footer{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+footer p{
+    color: #777777;
+}
+/* Add your styles for the initial and scrolled navigation bar here */
+.navbar {
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+.navbar.scrolled {
+    background-color: #fff; /* Change this to your desired background color */
+}
+.mkland{width: 35%;margin-left: 10px;}
+.lh-1{
+    line-height: 1;
+}
+
+/* Loader  */
+
+@-webkit-keyframes loader {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 10%;
+    }
+    25% {
+        width: 24%;
+    }
+    43% {
+        width: 41%;
+    }
+    56% {
+        width: 50%;
+    }
+    66% {
+        width: 52%;
+    }
+    71% {
+        width: 60%;
+    }
+    75% {
+        width: 76%;
+    }
+    94% {
+        width: 86%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes loader {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 10%;
+    }
+    25% {
+        width: 24%;
+    }
+    43% {
+        width: 41%;
+    }
+    56% {
+        width: 50%;
+    }
+    66% {
+        width: 52%;
+    }
+    71% {
+        width: 60%;
+    }
+    75% {
+        width: 76%;
+    }
+    94% {
+        width: 86%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.progress-bar {
+    width: 95%;
+    max-width: 95%;
+    left: 50%;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    margin-top: 30px;
+}
+.progress {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+.bar {
+    margin-top: 25px !important;
+    margin-bottom: 0 !important;
+}
+.progress-bar {
+    border-radius: 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    display: none;
+}
+.progress-bar span {
+    display: block;
+}
+.bar {
+    background: 0 0;
+}
+.progress {
+    -webkit-animation: loader 8s ease infinite;
+    animation: loader 8s ease infinite;
+    background: #16ACC9;
+    color: #fff;
+    padding: 5px;
+    width: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.progress-bar {
+    position: relative;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    background-color: transparent;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    width: 70px;
+    height: 70px;
+    background: #ccaf5d;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+}
+.owl-carousel .owl-nav button.owl-prev{left: 13%;}
+.owl-carousel .owl-nav button.owl-next{right: 13%;}
+.owl-carousel button.owl-dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #524a42;;
+    margin: 0 5px;
+}
+.owl-carousel button.owl-dot.active{background: #ddd6ce;}
+.owl-carousel .owl-dots{text-align: center;margin-top: 30px;}
+@media(max-width:960px){
+    .container{max-width: 100%;}
+    html,body{overflow-x: hidden;}
+}
+@media(max-width:500px){
+    .owl-carousel.gallery-slider .owl-item img{transform: scale(1.0);}
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{width: 40px;height: 40px;font-size: 18px;top: 65%;}
+    .owl-carousel button.owl-dot{width: 10px;height: 10px;margin: 0 3px;}
+    .owl-carousel .owl-dots{text-align: center;margin-top: 0px;}
+    .owl-carousel .owl-nav button.owl-prev{left: 5%;}
+    .owl-carousel .owl-nav button.owl-next{right: 5%;}
+    .amenities::before{left: 9%;}
+    hr.mx-auto{margin-left: auto !important;}
+}

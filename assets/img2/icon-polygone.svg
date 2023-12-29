@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135" height="118" viewBox="0 0 135 118">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#343232"/>
+      <stop offset="0.542" stop-color="#181717"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <filter id="Polygon_1" x="0" y="0" width="135" height="118" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Polygon_1)">
+    <path id="Polygon_1-2" data-name="Polygon 1" d="M49.005,16.23a11,11,0,0,1,18.989,0l39.321,67.215A11,11,0,0,1,97.821,100H19.179A11,11,0,0,1,9.684,83.446Z" transform="translate(126 106) rotate(180)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
