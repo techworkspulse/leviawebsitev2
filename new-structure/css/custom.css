@@ -1,0 +1,422 @@
+:root {
+    --sm: 640px;
+    --md: 768px;
+    --lg: 1024px;
+    --xl: 1280px;
+    --xxl: 1536px;
+    --xxxl:1800px;
+}
+@font-face {
+    font-family: 'Allrounder Monument Test';
+    src: url('../assets/font/AllrounderMonument-Medium.eot');
+    src: url('../assets/font/AllrounderMonument-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/AllrounderMonument-Medium.woff2') format('woff2'),
+        url('../assets/font/AllrounderMonument-Medium.woff') format('woff'),
+        url('../assets/font/AllrounderMonument-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/font/Montserrat-Medium.eot');
+    src: url('../assets/font/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/Montserrat-Medium.woff2') format('woff2'),
+        url('../assets/font/Montserrat-Medium.woff') format('woff'),
+        url('../assets/font/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/font/Montserrat-Light.eot');
+    src: url('../assets/font/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/Montserrat-Light.woff2') format('woff2'),
+        url('../assets/font/Montserrat-Light.woff') format('woff'),
+        url('../assets/font/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/font/Montserrat-Bold.eot');
+    src: url('../assets/font/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/Montserrat-Bold.woff2') format('woff2'),
+        url('../assets/font/Montserrat-Bold.woff') format('woff'),
+        url('../assets/font/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/font/Montserrat-Regular.eot');
+    src: url('../assets/font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/Montserrat-Regular.woff2') format('woff2'),
+        url('../assets/font/Montserrat-Regular.woff') format('woff'),
+        url('../assets/font/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-MontserratBold{font-family: 'Montserrat';font-weight: bold;}
+.font-MontserratMedium{font-family: 'Montserrat';font-weight: 500;}
+.font-MontserratLight{font-family: 'Montserrat';font-weight: 300;}
+.font-MontserratRegular{font-family: 'Montserrat';font-weight: normal;}
+.font-Allrounder{font-family: 'Allrounder Monument Test';}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+html { scroll-behavior: smooth; }
+
+body{
+    background-color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+section{
+    max-width: 100%;
+}
+[type='email']{
+    background-color: transparent;
+}
+.\[\&\:not\(\[data-te-collapse-collapsed\]\)\]\:text-primary:not([data-te-collapse-collapsed]){
+    color: #000 !important;
+}
+
+[type='text']{
+    background-color: transparent;
+    height: 50px;
+    color: #000;
+}
+
+input, select{
+    color: #000;
+    font-family: 'DIN';
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input:focus, select:focus,
+input:focus-visible, select:focus-visible{
+    box-shadow: none !important;
+    border-color:#000!important;
+    outline: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #000 !important;
+    font-family: 'Montserrat';
+}
+
+
+/* Footer  */
+footer{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+footer p{
+    color: #777777;
+}
+/* Add your styles for the initial and scrolled navigation bar here */
+.navbar {
+    transition: background-color 0.3s;
+}
+.navbar.scrolled {
+    background-color: #fff; /* Change this to your desired background color */
+}
+.lh-1{
+    line-height: 1;
+}
+
+/* Loader  */
+
+@-webkit-keyframes loader {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 10%;
+    }
+    25% {
+        width: 24%;
+    }
+    43% {
+        width: 41%;
+    }
+    56% {
+        width: 50%;
+    }
+    66% {
+        width: 52%;
+    }
+    71% {
+        width: 60%;
+    }
+    75% {
+        width: 76%;
+    }
+    94% {
+        width: 86%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes loader {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 10%;
+    }
+    25% {
+        width: 24%;
+    }
+    43% {
+        width: 41%;
+    }
+    56% {
+        width: 50%;
+    }
+    66% {
+        width: 52%;
+    }
+    71% {
+        width: 60%;
+    }
+    75% {
+        width: 76%;
+    }
+    94% {
+        width: 86%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.progress-bar {
+    width: 95%;
+    max-width: 95%;
+    left: 50%;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    margin-top: 30px;
+}
+.progress {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+.bar {
+    margin-top: 25px !important;
+    margin-bottom: 0 !important;
+}
+.progress-bar {
+    border-radius: 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    display: none;
+}
+.progress-bar span {
+    display: block;
+}
+.bar {
+    background: 0 0;
+}
+.progress {
+    -webkit-animation: loader 8s ease infinite;
+    animation: loader 8s ease infinite;
+    background: #16ACC9;
+    color: #fff;
+    padding: 5px;
+    width: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.progress-bar {
+    position: relative;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    background-color: transparent;
+}
+/*custom*/
+.owl-carousel.gallery-slider .owl-item img{
+    transform: scale(0.8);
+}
+.owl-carousel.gallery-slider .owl-item.active img{
+    transform: scale(1.0);
+    transition: ease-in-out 0.7;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #1f3b4e;
+    color: #1f3b4e;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+}
+.owl-carousel .owl-nav button.owl-prev{left: 15%;}
+.owl-carousel .owl-nav button.owl-next{right: 15%;}
+.owl-carousel button.owl-dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #1f3b4e;
+    opacity: 0.7;
+    margin: 0 5px;
+}
+.owl-carousel button.owl-dot.active{
+    opacity: 1.0;
+}
+.owl-carousel .owl-dots{text-align: center;margin-top: 30px;}
+.amenities::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 5%;
+    bottom: -40%;
+    border-right: 2px dashed #1f3b4e;
+    z-index: 0;
+}
+@media(max-width:960px){
+    .container{max-width: 100%;}
+    html,body{overflow-x: hidden;}
+}
+@media(max-width:500px){
+    .home-section{
+        background-image: url("../assets/img/hero_mobile.png");
+        background-size: 100% 100%;
+        background-position: top center;
+        min-height: 100vh;
+    }
+    .owl-carousel.gallery-slider .owl-item img{transform: scale(1.0);}
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{width: 40px;height: 40px;font-size: 18px;top: 65%;}
+    .owl-carousel button.owl-dot{width: 10px;height: 10px;margin: 0 3px;}
+    .owl-carousel .owl-dots{text-align: center;margin-top: 0px;}
+    .owl-carousel .owl-nav button.owl-prev{left: 5%;}
+    .owl-carousel .owl-nav button.owl-next{right: 5%;}
+    .amenities::before{left: 9%;}
+    .mobile-bg{background-color: #fff !important;}
+}
+
+.sticky-icons {
+    position: fixed;
+    bottom: 5%;
+    z-index: 10000;
+    display: flex;
+    flex-direction: row;
+    right: 1%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 6px rgb(182, 182, 182);
+    -webkit-animation: pulse 1.5s infinite;
+    -moz-animation: pulse 1.5s infinite;
+    -o-animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite;
+  }
+
+  .sticky-icons:hover {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+  }
+
+  .sticky-icons :hover{cursor: pointer;}
+  .sticky-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    background: #0D9F16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 5px;
+    position: relative;
+    transform: rotate(30deg);
+  }
+  
+  .sticky-icon img{width: 70%;object-fit: contain;}
+  .sticky-icons p{
+    color: #0a6b10;
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding: 0;
+    line-height: 1.2;
+  }
+
+  .sticky-icon::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #0d9f16;
+    position: absolute;
+    bottom: -3px;
+    left: -17px;
+    right: 0;
+    margin: 0 auto;
+    transform: rotateZ(31deg);
+  }
+
+  .rotate-image{
+    transform: rotate(-25deg);
+  }
+  @-webkit-keyframes pulse {
+    0% {transform: scale(0.9);}
+    70% {transform: scale(1);box-shadow: 0 0 0 30px rgba(90, 153, 212, 0);}
+    100% {transform: scale(0.9);box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);}
+  }
+  @-moz-keyframes pulse{
+    0% {transform: scale(0.9);}
+    70% {transform: scale(1);box-shadow: 0 0 0 30px rgba(90, 153, 212, 0);}
+    100% {transform: scale(0.9);box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);}
+  }
+  @-o-keyframes pulse{
+    0% {transform: scale(0.9);}
+    70% {transform: scale(1);box-shadow: 0 0 0 30px rgba(90, 153, 212, 0);}
+    100% {transform: scale(0.9);box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);}
+  }
+  @keyframes pulse{
+    0% {transform: scale(0.9);}
+    70% {transform: scale(1);box-shadow: 0 0 0 30px rgba(90, 153, 212, 0);}
+    100% {transform: scale(0.9);box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);}
+  }
+  
+  @media(max-width:500px){
+    .sticky-icons p{font-size: 12px;}
+    .sticky-icon{width: 35px;height: 35px;}
+  }

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Eka Height | Matrix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon.png" />
+
+    <!-- Social -->
+    <meta property="og:title" content="Eka Height | Matrix" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image:url" content="" />
+
+    <!-- Google -->
+    <meta name="title" content="Eka Height | Matrix" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Digital Symphony" />
+
+    <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/png" />
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <!-- <link rel="stylesheet" href="css/themify-icons.css" /> -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slicknav.css" />
+    <link rel="stylesheet" href="css/locomotive-scroll.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0093/2524.js" async="async"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+    <!-- DS Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1097017407065773');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=1097017407065773&ev=PageView
+      &noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              'sm': '640px',
+              'md': '960px',
+              'lg': '1024px',
+              'xl': '1300px',
+              '2xl': '1440px',
+              '3xl': '1800px',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body class="antialiased">
+    <main>
+      <!-- Main navigation container -->
+      <nav class="navbar top-0 fixed bg-trasparent z-50 w-[100vw] py-3 flex flex-wrap items-center justify-between">
+        <div class="w-[85%] mx-auto flex flex-wrap items-center justify-between">
+          <div
+            class="px-0 sm:px-[7%] lg:px-0 w-full relative flex items-center justify-between lg:w-auto lg:static lg:block lg:justify-start"
+          >
+            <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              href="/"
+              >
+              <img class="w-[90%] mx-auto max-h-[45px] sm:max-h-[70px] object-contain" src="./assets/img/logo.png" alt="">
+            </a>
+            <button
+              class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              type="button"
+              onclick="toggleNavbar('example-collapse-navbar')"
+            >
+              <i class="text-[#668B01] fas fa-bars"></i>
+            </button>
+          </div>
+          <div
+            class="lg:flex flex-grow items-center bg-black lg:bg-transparent lg:shadow-none hidden"
+            id="example-collapse-navbar"
+          >
+            <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+              <li class="flex items-center justify-center py-4 lg:py-0 lg:mr-8">
+                <a
+                  class="text-[#613000] font-MontserratMedium uppercase text-[14px] sm:text-[15px] xl:text-[20px] 3xl:text-[18px] tracking-[2px]"
+                  href="#features"
+                  >Features
+                </a>
+              </li>
+              <li class="flex items-center justify-center py-4 lg:py-0 lg:mr-8">
+                <a
+                  class="text-[#613000] font-MontserratMedium uppercase text-[14px] sm:text-[15px] xl:text-[20px] 3xl:text-[18px] tracking-[2px]"
+                  href="#gallery"
+                  >Gallery
+                </a>
+              </li>
+              <li class="flex items-center justify-center py-4 lg:py-0 lg:mr-8">
+                <a
+                  class="text-[#613000] font-MontserratMedium uppercase text-[14px] sm:text-[15px] xl:text-[20px] 3xl:text-[18px] tracking-[2px]"
+                  href="#location"
+                  >Location
+                </a>
+              </li>
+              <li class="flex items-center hidden lg:flex">
+                <a
+                  href="#registration"
+                  class="text-white font-MontserratMedium uppercase bg-[#613000] rounded-lg py-2 px-8 text-[14px] sm:text-[15px] xl:text-[20px] 3xl:text-[18px] flex justify-center items-center btn-register"
+                  type="button"
+                  style="transition: all 0.15s ease 0s;"
+                >
+                  Register Now               
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="relative home-section flex justify-center items-start">
+        <div class="text-center mt-[130px] relative">
+          <h2 class="text-[#613000] font-Allrounder text-[25px] md:text-[45px] mb-3 leading-none"><span class="text-[30px] md:text-[55px]">T</span>hank yo<span class="text-[30px] md:text-[55px]">U</span></h2>
+          <img src="./assets/img/line.png" width="445" height="12.02" alt="Line" class="w-[250px] sm:w-[445px] text-center mx-auto my-4"/>
+          <p class="text-[#613000] font-MontserratMedium uppercase tracking-[3px] text-[24px]">We will get back to you soon</p>
+          <img src="./assets/img/bird.png" width="118" height="95.94" alt="bird" class="absolute top-auto sm:top-[68%] right-0 sm:right-[-25%] w-[80px] sm:w-[118px]" />
+          <img src="./assets/img/fly.png" width="60" height="54.89" alt="fly" class="absolute top-[-20px] w-[40px] sm:w-[60px]" />
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="bg-black py-[60px] relative">
+      <div class="container w-[85%] xl:w-[80%] mx-auto">
+        <div class="flex flex-col lg:flex-row items-center justify-center">
+          <div class="w-full sm:w-[20%] lg:w-[10%] flex flex-row items-center justify-center lg:justify-start">
+            <img class="max-h-[100px]" src="./assets/img/matrix-logo2.png" alt="Matrix logo">
+          </div>
+          <div class="w-full sm:w-[80%] lg:w-[80%] text-white text-center flex flex-col justify-start">
+            <p class="uppercase text-white font-MontserratMedium text-[12px] sm:text-[14px] mb-3 sm:mb-0">
+              Copyright &copy; Matrix Concepts Holdings Berhad 199601042262 (414615-U).<br class="sm:hidden"> All Rights Reserved.
+            </p>
+            <p class="text-white font-MontserratMedium text-[12px] sm:text-[12px] mb-3 sm:mb-0">Wisma Matrix, No. 57, Jalan Tun Dr. Ismail, 70200 Seremban, Negeri Sembilan, Malaysia.</p>
+            <p>
+              <a class="text-white hover:text-[#1f3b4e] font-MontserratMedium text-[12px] sm:text-[12px] mr-2" href="">Disclaimer</a>|<a class="text-white hover:text-[#1f3b4e] font-MontserratMedium text-[12px] sm:text-[12px] mx-2" href="">Terms & Conditions</a>|<a class="text-white hover:text-[#1f3b4e] font-MontserratMedium text-[12px] sm:text-[12px] ml-2" href="">PDPA</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+</html>
