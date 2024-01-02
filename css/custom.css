@@ -46,9 +46,9 @@
   }
 .font-GothamBook{font-family: 'GothamBook';}
 .font-GothamMedium{font-family: 'Gotham-Medium';}
-.font-Butler{font-family: 'Butler_Bold';}
+.font-ButlerBold{font-family: 'Butler_Bold';}
 .font-Baskerville{font-family: 'Baskerville';}
-.font-Avgardd{font-family: 'AVGARDD_2'}
+.font-Avgard{font-family: 'AVGARDD_2'}
 
 html { scroll-behavior: smooth; }
 
@@ -66,30 +66,23 @@ html, body{overflow-x: hidden;}
 [type='text']{
     background-color: transparent;
     height: 50px;
-    color: white;
+    color: black;
 }
 
 input, select{
-    color: white;
-    font-family: 'Poppins';
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    color: black;
+    font-family: 'AVGARDD_2';
 }
 
 input:focus, select:focus,
 input:focus-visible, select:focus-visible{
     box-shadow: none !important;
-    border-color:white!important;
     outline: 0;
-    border-top: none;
-    border-left: none;
-    border-right: none;
 }
 
 input::placeholder, textarea::placeholder{
-    color: white !important;
-    font-family: 'Poppins';
+    color: black !important;
+    font-family: 'AVGARDD_2';
 }
 
 /* Footer  */
@@ -230,7 +223,7 @@ footer p{
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
     width: 70px;
     height: 70px;
-    background: #ccaf5d;
+    background: #bda37f;
     border-radius: 50%;
     color: white;
     font-size: 30px;
