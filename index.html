@@ -640,7 +640,168 @@
                   Floor Plans
                 </h3>
             </div>
-            <!-- <Tab/> -->
+            <div class="mt-14">
+              <div class="flex w-full mx-auto justify-center lg:justify-start items-center mb-10 lg:mb-0">
+                <a onclick="toggleTab(1)" class="cursor-pointer">
+                    <div class="flex items-center justify-center" role="presentation">
+                        <button class="text-[#c8c4c1] flex items-start font-ButlerBold tracking-[2px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase hover:text-[#bda37f]" 
+                            id="typeb-tab" 
+                            data-tabs-target="#typeb" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="typeb" 
+                            aria-selected="false"
+                        >
+                            <span class=" underline underline-offset-8">type</span>
+                            <span class="text-[25px] sm:text-[30px] xl:text-[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none ml-2">B</span>
+                        </button>
+                    </div>
+                </a>
+                <a onclick="toggleTab(2)" class="cursor-pointer mx-8">
+                    <div class="flex items-center justify-center" role="presentation">
+                        <button class="text-[#c8c4c1] flex items-start font-ButlerBold tracking-[2px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase hover:text-[#bda37f]" 
+                            id="typec-tab" 
+                            data-tabs-target="#typec" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="typec" 
+                            aria-selected="false"
+                        >
+                            <span class=" underline underline-offset-8">type</span>
+                            <span class="text-[25px] sm:text-[30px] xl:text-[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none ml-2">C</span>
+                        </button>
+                    </div>
+                </a>
+                <a onclick="toggleTab(3)" class="cursor-pointer">
+                    <div class="flex items-center justify-center" role="presentation">
+                        <button class="text-[#c8c4c1] flex items-start font-ButlerBold tracking-[2px] text-[17px] md:text-[18px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[23px] uppercase hover:text-[#bda37f]" 
+                            id="typed-tab" 
+                            data-tabs-target="#typed" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="typed" 
+                            aria-selected="false"
+                        >
+                            <span class=" underline underline-offset-8">type</span>
+                            <span class="text-[25px] sm:text-[30px] xl:text-[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none ml-2">D</span>
+                        </button>
+                    </div>
+                </a>
+              </div>
+              <div id="tab1" class="block">
+                  <!-- Content for tab 1 -->
+                  <div class="w-full md:gap-4 flex flex-col-reverse lg:flex-row items-center flex-wrap justify-between m-auto">
+                    <div class="justify-between col-span-1 w-full md:w-[38%]">
+                        <Image src="./assets/img/floorplan/fp-b-tower.png" class="w-full" alt="Facebook" width="1000" height="1000"/>
+                        <div>
+                        <a href="https://s3.ap-southeast-1.amazonaws.com/leviaresidence.com/assets/levia360/index.htm?media-index=8" target="_blank" class="border-solid border-2 border-[#bda37f] flex justify-center w-fit py-2 px-7 mx-auto text-[#bda37f] hover:bg-[#bda37f] hover:text-white mt-10">
+                            <div class="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[20px] 3xl:text-[23px] hover:cursor-pointer">
+                                VR 360°
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="justify-between col-span-1 w-full lg:w-[60%] xl:w-[50%]">
+                        <div class="flex flex-col sm:flex-row justify-center items-start">
+                            <div class="bg-[#bda37f] rounded-l-lg rounded-r-lg sm:rounded-r-none  w-full sm:w-[20%] px-5 py-4">
+                                <div class="hidden sm:block text-center text-sm:left">
+                                    <p class="font-ButlerBold text-white tracking-[2px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[18px] 3xl:text-[23px] uppercase">Type</p>
+                                    <h3 class="font-ButlerBold text-white tracking-[2px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none  uppercase">B</h3>
+                                </div>
+                                <div class="mt-0 sm:mt-14 mb-5">
+                                    <p class="font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px] text-center sm:text-left">
+                                        <span class="text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[23px] 3xl:text-[25px]">938</span> sq.ft</p>
+                                </div>
+                                <div class="flex flex-row sm:flex-col justify-center sm:justify-end">
+                                    <p class="font-GothamMedium text-white text-right leading-none pr-3 sm:pr-0 border border-l-0 border-t-0 border-b-0 sm:border-r-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">3 Beds</p>
+                                    <div class="hidden sm:flex border-b-[1px] border-[#ffffff] w-full my-2"></div>
+                                    <p class="font-GothamMedium text-white text-right leading-none pl-3 sm:pl-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">2 Baths</p>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-[80%] p-5">
+                                <Image src="./assets/img/floorplan/fp-b.png" class="w-full" alt="Facebook" width="1000" height="1000"/>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          
+              <div id="tab2" class="hidden">
+                  <!-- Content for tab 2 -->
+                  <div class="w-full md:gap-4 flex flex-col-reverse lg:flex-row items-center flex-wrap justify-between m-auto">
+                    <div class="justify-between col-span-1 w-full md:w-[38%]">
+                        <Image src="./assets/img/floorplan/LeviaTypeCLayout-02.png" class="w-full" alt="Facebook" width="1000" height="1000"/>
+                        <div>
+                          <a class="border-solid border-2 border-[#bda37f] flex justify-center w-fit py-2 px-7 mx-auto text-[#bda37f] hover:bg-[#bda37f] hover:text-white mt-10">
+                            <div class="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[20px] 3xl:text-[23px] hover:cursor-pointer">
+                                VR 360°
+                            </div>
+                          </a> 
+                        </div>
+                    </div>
+                    <div class="justify-between col-span-1 w-full lg:w-[60%] xl:w-[50%]">
+                        <div class="flex flex-col sm:flex-row justify-center items-start">
+                            <div class="bg-[#bda37f] rounded-l-lg rounded-r-lg sm:rounded-r-none  w-full sm:w-[20%] px-5 py-4">
+                                <div class="hidden sm:block text-center text-sm:left">
+                                    <p class="font-ButlerBold text-white tracking-[2px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[18px] 3xl:text-[23px] uppercase">Type</p>
+                                    <h3 class="font-ButlerBold text-white tracking-[2px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none  uppercase">C</h3>
+                                </div>
+                                <div class="mt-0 sm:mt-14 mb-5">
+                                    <p class=" font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px] text-center sm:text-left">
+                                        <span class="text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[23px] 3xl:text-[25px]">1,098</span> sq.ft</p>
+                                </div>
+                                <div class="flex flex-row sm:flex-col justify-center sm:justify-end">
+                                    <p class="font-GothamMedium text-white text-right leading-none pr-3 sm:pr-0 border border-l-0 border-t-0 border-b-0 sm:border-r-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">3 + 1 Beds</p>
+                                    <div class="hidden sm:flex border-b-[1px] border-[#ffffff] w-full my-2"></div>
+                                    <p class="font-GothamMedium text-white text-right leading-none pl-3 sm:pl-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">3 Baths</p>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-[80%] p-5">
+                                <Image src="./assets/img/floorplan/LeviaTypeC.png" class="w-full" alt="Facebook" width="1000" height="1000"/>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          
+              <div id="tab3" class="hidden">
+                  <!-- Content for tab 3 -->
+                  <div class="w-full md:gap-4 flex flex-col-reverse lg:flex-row items-center flex-wrap justify-between m-auto">
+                    <div class="justify-between col-span-1 w-full md:w-[38%]">
+                        <Image src="./assets/img/floorplan/LeviaTypeDLayout-03.png" class="w-full" alt="Facebook" width="1000" height="1000"/>
+                        <div>
+                        <a href="https://s3.ap-southeast-1.amazonaws.com/leviaresidence.com/assets/levia360/index.htm?media-index=15" target="_blank" class="border-solid border-2 border-[#bda37f] flex justify-center w-fit py-2 px-7 mx-auto text-[#bda37f] hover:bg-[#bda37f] hover:text-white mt-10">
+                            <div class="font-GothamMedium uppercase tracking-[3px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[20px] 3xl:text-[23px] hover:cursor-pointer">
+                                VR 360°
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="justify-between col-span-1 w-full lg:w-[60%] xl:w-[50%]">
+                        <div class="flex flex-col sm:flex-row justify-center items-start">
+                            <div class="bg-[#bda37f] rounded-l-lg rounded-r-lg sm:rounded-r-none  w-full sm:w-[20%] px-5 py-4">
+                                <div class="hidden sm:block text-center text-sm:left">
+                                    <p class="font-ButlerBold text-white tracking-[2px] text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[18px] 3xl:text-[23px] uppercase">Type</p>
+                                    <h3 class="font-ButlerBold text-white tracking-[2px] text-[25px] sm:text-[30px] xl:text[30px] 2xl:text-[35px] 3xl:text-[50px] leading-none  uppercase">D</h3>
+                                </div>
+                                <div class="mt-0 sm:mt-14 mb-5">
+                                    <p class=" font-GothamMedium text-white leading-none text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px] text-center sm:text-left">
+                                        <span class="text-[17px] md:text-[18px] lg:text-[18px] 2xl:text-[23px] 3xl:text-[25px]">1,351</span> sq.ft</p>
+                                </div>
+                                <div class="flex flex-row sm:flex-col justify-center sm:justify-end">
+                                    <p class="font-GothamMedium text-white text-right leading-none pr-3 sm:pr-0 border border-l-0 border-t-0 border-b-0 sm:border-r-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">4 + 1 Beds</p>
+                                    <div class="hidden sm:flex border-b-[1px] border-[#ffffff] w-full my-2"></div>
+                                    <p class="font-GothamMedium text-white text-right leading-none pl-3 sm:pl-0 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[17px] xl:text-[17px] 2xl:text-[18px] 3xl:text-[20px]">3 Baths</p>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-[80%] p-5">
+                                <Image src="./assets/img/floorplan/LeviaTypeD.png" class="w-full" alt="Facebook" width="1000" height="1000"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
         </div>
     </section>
 
@@ -1836,6 +1997,17 @@
         prevEl: ".swiper-button-prev",
       },
     });
+  </script>
+  <script>
+    function toggleTab(tabNumber) {
+        // Hide all tabs
+        for (let i = 1; i <= 3; i++) {
+            document.getElementById(`tab${i}`).classList.add('hidden');
+        }
+
+        // Show the selected tab
+        document.getElementById(`tab${tabNumber}`).classList.remove('hidden');
+    }
   </script>
   <script type="text/javascript">
     $(document).ready(function () {  
