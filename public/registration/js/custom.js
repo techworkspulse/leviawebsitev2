@@ -76,8 +76,8 @@ $(document).ready(function() {
 
             $.ajax({
                 type: "POST",
-                url: "https://sw32mfimuj.execute-api.ap-southeast-1.amazonaws.com/dev/centrum/contacts", //staging API
-                // url: "https://9fduw6fg0c.execute-api.ap-southeast-1.amazonaws.com/prod/centrum/contacts",
+                url: "https://p6mwft7nz1.execute-api.ap-southeast-1.amazonaws.com/dev/levia-lead-gen/contacts", //staging API
+                // url: "https://xog73sh1b2.execute-api.ap-southeast-1.amazonaws.com/prod/levia-lead-gen/contacts",
                 contentType: 'application/json',
                 data: JSON.stringify(payload),
                 success: function(res){
