@@ -59,25 +59,21 @@ $(document).ready(function() {
             var name = $('#name').val();
             var email = $('#email').val();
             var phone = $('#phone').val(); 
-            var typeofinterest = $('#typeofinterest').val(); 
-            var bedroom = $('#bedroom').val(); 
-            var invest = $('#invest').val(); 
+            var city = $('#city').val(); 
 
             let payload = {
                 "name" : name,
                 "email" : email,
                 "phone" : phone, 
-                "interest" : typeofinterest,
-                "bedrooms" : bedroom,
-                "preference" : invest,
+                "city" : city,
                 "source" : sourceType,
                 "utm_sources" : Object.keys(filtered).length ? JSON.stringify(filtered) : null,
             };
 
             $.ajax({
                 type: "POST",
-                url: "https://p6mwft7nz1.execute-api.ap-southeast-1.amazonaws.com/dev/levia-lead-gen/contacts", //staging API
-                // url: "https://xog73sh1b2.execute-api.ap-southeast-1.amazonaws.com/prod/levia-lead-gen/contacts",
+                // url: "https://p6mwft7nz1.execute-api.ap-southeast-1.amazonaws.com/dev/levia-lead-gen/contacts", //staging API
+                url: "https://xog73sh1b2.execute-api.ap-southeast-1.amazonaws.com/prod/levia-lead-gen/contacts",
                 contentType: 'application/json',
                 data: JSON.stringify(payload),
                 success: function(res){
