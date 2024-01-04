@@ -492,7 +492,7 @@ footer p{
 .progress {
     -webkit-animation: loader 8s ease infinite;
     animation: loader 8s ease infinite;
-    background: #16ACC9;
+    background: #07243B;
     color: #fff;
     padding: 5px;
     width: 0;
