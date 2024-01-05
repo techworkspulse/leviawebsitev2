@@ -238,6 +238,15 @@ export default function Home() {
       
       <StickyButton></StickyButton>
       <Footer></Footer>
+
+      <div id="whatsapp-btn" className="sticky-icons flex flex-row">
+        <a href="https://api.whatsapp.com/send?phone=60392123077&text=Hello%20Levia%20Residence!%20I%27m%20browsing%20through%20your%20website%20and%20want%20to%20know%20further%20about%20your%20products" target="_blank">
+          <div className="sticky-icon cursor-pointer">
+              <Image className="rotate-image" src="./img/whatsapp.svg" width="250" height="250" alt="whatsapp" /> 
+          </div>
+        </a>
+      </div> 
+
     </>
   )
 }
